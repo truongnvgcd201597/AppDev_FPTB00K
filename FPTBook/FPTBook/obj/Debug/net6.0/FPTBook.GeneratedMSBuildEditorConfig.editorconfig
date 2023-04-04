@@ -9,33 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FPTBook
 build_property.RootNamespace = FPTBook
-build_property.ProjectDir = D:\Tai Lieu Cac Mon\1670 App Dev\FPTBook\AppDev_FPTB00K\FPTBook\FPTBook\
+build_property.ProjectDir = D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\FPTBook\FPTBook\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Tai Lieu Cac Mon\1670 App Dev\FPTBook\AppDev_FPTB00K\FPTBook\FPTBook
+build_property.MSBuildProjectDirectory = D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\FPTBook\FPTBook
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/AdminBook/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29rXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/AdminOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5PcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/AdminUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/Error.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/OwnerBook/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJCb29rXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/OwnerHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/OwnerOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJPcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/HeaderFooter.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/HeaderFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlckZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/_ViewImports.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/_ViewStart.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
