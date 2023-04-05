@@ -8,5 +8,9 @@ namespace FPTBook.Models
         {
             return View();
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
