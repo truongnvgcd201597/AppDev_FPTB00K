@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "gkk0TsADvo8slZgVKQDaALtiowDZ18p1tcEmxESYo4bAePN8/yi1a6Laj4WnWmn2MiW9jZ/WU5iTiX6sXLh1Ig==",
   "success": true,
   "projectFilePath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook.csproj",
@@ -153,5 +154,11 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "tAWOL2Zz33RTPFKYH6xabzMYWe8aA5LWxEXOY2gXjUMI0xClRlMwCV2LTAHP68PSMEu7oSZNLsLVXbbfhJDdqg==",
+  "success": true,
+  "projectFilePath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Stashed changes
   "logs": []
 }
