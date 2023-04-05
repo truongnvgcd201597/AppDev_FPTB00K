@@ -477,7 +477,7 @@ button {
 .movies_section {
     width: 100%;
     float: left;
-    background-color: #3c0e0e;
+    background-color: rgb(75 125 210);
     height: auto;
     padding-bottom: 90px;
 }
@@ -744,7 +744,7 @@ input.email_text::placeholder {
     text-align: center;
     font-size: 26px;
     color: #fff;
-    background-color: #3c0e0e;
+    background-color: #92b558;
     border-radius: 100px;
     padding: 15px 0px;
     margin-top: 100px;
