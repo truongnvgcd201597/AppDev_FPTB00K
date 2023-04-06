@@ -9056,19 +9056,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\WINDOWS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+      "projectUniqueName": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
       "projectName": "FPTBook",
-      "projectPath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
+      "projectPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+      "packagesPath": "C:\\Users\\WINDOWS\\.nuget\\packages\\",
+      "outputPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WINDOWS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
