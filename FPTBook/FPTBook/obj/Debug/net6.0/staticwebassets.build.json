@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "UCbBke3QwX6j/S4GxIX1OocJZqx32pXWhuPEnBG9Yqw=",
+=======
+  "Hash": "I6q8i96F6UH0KAtzW7L1F6hLm9bCxDL6t7jRFdxCECI=",
+>>>>>>> Stashed changes
   "Source": "FPTBook",
   "BasePath": "_content/FPTBook",
   "Mode": "Default",
@@ -510,7 +514,62 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\banner-bg.png",
+=======
+      "Identity": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-1.jpg",
+      "SourceId": "FPTBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBook",
+      "RelativePath": "assets/images/avatar-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\avatar-1.jpg"
+    },
+    {
+      "Identity": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-2.png",
+      "SourceId": "FPTBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBook",
+      "RelativePath": "assets/images/avatar-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\avatar-2.png"
+    },
+    {
+      "Identity": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-3.jpg",
+      "SourceId": "FPTBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBook",
+      "RelativePath": "assets/images/avatar-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\avatar-3.jpg"
+    },
+    {
+      "Identity": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\banner-bg.png",
+>>>>>>> Stashed changes
       "SourceId": "FPTBook",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\",

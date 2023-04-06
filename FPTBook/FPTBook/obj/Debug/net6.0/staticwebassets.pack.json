@@ -113,7 +113,23 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
+<<<<<<< Updated upstream
       "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\banner-bg.png",
+=======
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar-1.jpg"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar-2.png"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar-3.jpg"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\banner-bg.png",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\assets\\images\\banner-bg.png"
     },
     {

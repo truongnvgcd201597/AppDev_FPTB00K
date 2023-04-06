@@ -10,6 +10,10 @@ namespace FPTBook.Models
         }
         public IActionResult AboutUs()
         {
+			return View();
+        }
+        public IActionResult FAQ()
+        {
             return View();
         }
     }

@@ -28,11 +28,19 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEFib3V0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
 [D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/FAQ.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEZBUS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Tai Lieu Cac Mon/1670 App Dev/FPTBook/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/Index.cshtml]
+=======
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEZBUS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/Views/CustomerHome/Index.cshtml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

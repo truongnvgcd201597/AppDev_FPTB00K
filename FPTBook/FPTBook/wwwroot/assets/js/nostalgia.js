@@ -3,8 +3,6 @@ const cityName = document.querySelector('.city-name');
 const currentTemp = document.querySelector('.current-temp');
 const imgWeather = document.querySelector('.img-weather');
 
-const currentTime = document.querySelector('.current-time');
-
 async function GetWeatherStatus() {
     const respone = await fetch(URL);
     const data = await respone.json();
@@ -15,19 +13,17 @@ async function GetWeatherStatus() {
 
 }
 
-function TimeCurrent() {
-    const now = new Date();
-    const hours = now.getHours();
-    const mintunes = now.getMinutes();
-    const seconds = now.getSeconds().toString().padStart(2, 0);
-
-    currentTime.textContent = `${hours}:${mintunes}:${seconds}`;
+function ToogleFAQ() {
+    const cardHeader = document.querySelector('.card-header');
+    cardHeader.addEventListener('click', function () {
+        const panelCollapse = document.querySelector('.panel-collapse');
+        panelCollapse.classList.toggle('in');
+    });
 }
-
 
 (() => {
     GetWeatherStatus();
-    setInterval(() => {
-        TimeCurrent();
-    }, 1000)
+    ToogleFAQ();
 })()
+
+
