@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FPTBook",
-    "\\FPTBook\\FPTBook",
-    "\\FPTBook\\FPTBook\\Controllers",
-    "\\FPTBook\\FPTBook\\Views",
-    "\\FPTBook\\FPTBook\\Views\\CustomerHome"
+    "\\AppDev_FPTB00K",
+    "\\AppDev_FPTB00K\\FPTBook",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\Views",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\Views\\CustomerHome",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\Views\\Shared",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets",
+    "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\wwwroot\\assets\\css"
   ],
-  "SelectedNode": "\\FPTBook\\FPTBook.sln",
+  "SelectedNode": "\\AppDev_FPTB00K\\FPTBook\\FPTBook\\Views\\CustomerHome\\FAQ.cshtml",
   "PreviewInSolutionExplorer": false
 }
