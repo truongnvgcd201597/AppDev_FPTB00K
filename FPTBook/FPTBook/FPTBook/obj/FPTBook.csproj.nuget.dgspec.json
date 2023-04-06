@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tandu\\Documents\\GitHub\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {}
+    "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tandu\\Documents\\GitHub\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {
+    "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tandu\\Documents\\GitHub\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+        "projectUniqueName": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
         "projectName": "FPTBook",
-        "projectPath": "C:\\Users\\tandu\\Documents\\GitHub\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
-        "packagesPath": "C:\\Users\\tandu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tandu\\Documents\\GitHub\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
+        "projectPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+        "packagesPath": "C:\\Users\\WINDOWS\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WINDOWS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
