@@ -221,12 +221,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\linkedin-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\logo.png",
-      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\logbook.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\logbook.jpg"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\newsletter-bg.png",
-      "PackagePath": "staticwebassets\\assets\\images\\newsletter-bg.png"
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
       "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\images\\notification-icon.png",
@@ -261,82 +261,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\user-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets\\js\\.DS_Store"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\custom.js",
-      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\jquery-3.0.0.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.0.0.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\jquery.mCustomScrollbar.concat.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\jquery.mCustomScrollbar.concat.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\jquery.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\jquery.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\modernizer.js",
-      "PackagePath": "staticwebassets\\assets\\js\\modernizer.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\nostalgia.js",
-      "PackagePath": "staticwebassets\\assets\\js\\nostalgia.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\plugin.js",
-      "PackagePath": "staticwebassets\\assets\\js\\plugin.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\popper.min.js",
-      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
-    },
-    {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\assets\\js\\slider-setting.js",
-      "PackagePath": "staticwebassets\\assets\\js\\slider-setting.js"
-    },
-    {
       "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -345,8 +269,88 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\js\\.DS_Store"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\modernizer.js",
+      "PackagePath": "staticwebassets\\js\\modernizer.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\nostalgia.js",
+      "PackagePath": "staticwebassets\\js\\nostalgia.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugin.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\selectors.js",
+      "PackagePath": "staticwebassets\\js\\selectors.js"
+    },
+    {
       "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\js\\slider-setting.js",
+      "PackagePath": "staticwebassets\\js\\slider-setting.js"
     },
     {
       "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\wwwroot\\lib\\bootstrap\\LICENSE",
