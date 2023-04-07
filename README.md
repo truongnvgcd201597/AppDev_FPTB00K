@@ -1,3 +1,40 @@
+# Controller List
+| View name              | Statement                            |
+|-----------------------|--------------------------------------|
+| Index.cshtml           | Home page                            |
+| SearchResult.cshtml    | Search results page                  |
+| FAQ.cshtml             |                                      |
+| AboutUs.cshtml         |                                      |
+| Index.cshtml           | Book catalog page                     |
+| Details.cshtml         | Book details page                     |
+| ShoppingCart.cshtml    | Shopping cart page                    |
+| Checkout.cshtml        | Checkout page                         |
+| Register.cshtml        | Registration page                     |
+| Login.cshtml           | Login page                            |
+| Account.cshtml         | User account page                     |
+| OrderHistory.cshtml    | Order history page                    |
+| Index.cshtml           | Home page                            |
+| SearchResult.cshtml    | Search results page                  |
+| Index.cshtml           | Book catalog page                     |
+| Details.cshtml         | Book details page                     |
+| Addbook.cshtml         | Add new book page                     |
+| Editbook.cshtml        | Edit existing book page               |
+| Index.cshtml           | Order management page                 |
+| Details.cshtml         | Order details page                    |
+| Index.cshtml           | Home page                            |
+| SearchResult.cshtml    | Search results page                  |
+| Index.cshtml           | Book catalog page                     |
+| Details.cshtml         | Book details page                     |
+| Addbook.cshtml         | Add new book page                     |
+| Editbook.cshtml        | Edit existing book page               |
+| DeleteBook.cshtml      | Delete book page                      |
+| Index.cshtml           | Order management page                 |
+| Details.cshtml         | Order details page                    |
+| Index.cshtml           | User management page                  |
+| AddUser.cshtml         | Add new user page                     |
+| EditUser.cshtml        | Edit existing user page               |
+| DeleteUser.cshtml      | Delete user page                      |
+
 ```mermaid
 classDiagram
     class Categories{
