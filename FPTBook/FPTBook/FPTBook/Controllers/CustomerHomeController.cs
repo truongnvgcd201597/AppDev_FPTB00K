@@ -23,5 +23,9 @@ namespace FPTBook.Models
         {
             return View();
         }
+        public IActionResult CustomerEditProfile()
+        {
+            return View();
+        }
     }
 }

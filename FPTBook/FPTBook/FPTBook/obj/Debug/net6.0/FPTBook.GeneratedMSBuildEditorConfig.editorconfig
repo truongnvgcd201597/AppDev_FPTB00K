@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXENvbnRhY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/FPTBook/Views/CustomerHome/CustomerEditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEN1c3RvbWVyRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/FPTBook/FPTBook/FPTBook/Views/CustomerHome/CustomerProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJIb21lXEN1c3RvbWVyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
