@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
