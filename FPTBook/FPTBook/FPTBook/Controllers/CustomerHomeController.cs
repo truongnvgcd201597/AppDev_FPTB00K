@@ -19,5 +19,9 @@ namespace FPTBook.Models
         {
             return View();
         }
+        public IActionResult CustomerProfile()
+        {
+            return View();
+        }
     }
 }

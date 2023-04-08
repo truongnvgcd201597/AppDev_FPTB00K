@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {}
+    "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {}
   },
   "projects": {
-    "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {
+    "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+        "projectUniqueName": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
         "projectName": "FPTBook",
-        "projectPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
-        "packagesPath": "C:\\Users\\WINDOWS\\.nuget\\packages\\",
-        "outputPath": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\FPTBook\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
+        "projectPath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\FPTBook.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\FPTBook\\FPTBook\\FPTBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\WINDOWS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +40,31 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AspNetCoreHero.ToastNotification": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [
