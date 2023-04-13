@@ -4,56 +4,48 @@
 @{
     ViewData["Title"] = "Log in";
 }
-
-<div class="container" style="display: flex;justify-content: center; align-items: center; text-align: center; min-height: 70vh;">
-    <!-- Start: Login Box [En] -->
-    <div class="d-flex flex-column justify-content-center" id="login-box" style="margin: 0">
-        <form id="account" method="post" style="height: max-content; width: 500px">
-            <div class="login-box-header">
-                <h4 style="
-              color: rgb(139, 139, 139);
-              margin-bottom: 0px;
-              font-weight: 400;
-              font-size: 27px;
-            ">
-                    Login
-                </h4>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                     class="img-fluid" alt="Phone image">
             </div>
-            <div class="email-login" style="background-color: #ffffff">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"
-                    type="email" style="margin-top: 10px" required="" placeholder="Email" minlength="6" /><input
-                    asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true"
-                    type="password" style="margin-top: 10px" required="" placeholder="Password" minlength="6" />
-            </div>
-            <div class="submit-row" style="margin-bottom: 8px; padding-top: 0px">
-                <button class="btn btn-primary d-block box-shadow w-100" id="submit-id-submit" type="submit">
-                    Login
-                </button>
-                <div class="d-flex justify-content-between">
-                    <div class="checkbox">
-                        <label asp-for="Input.RememberMe" class="form-label">
-                            <input class="form-check-input" asp-for="Input.RememberMe" />
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
-                        </label>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <form id="account" method="post">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form1Example13">Email address</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"
+                               type="email" style="margin-top: 10px" required="" placeholder="Email" minlength="6" />
+                        <label class="form-label" for="form1Example23">Password</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true"
+                                type="password" style="margin-top: 10px" required="" placeholder="Password" minlength="6" />
                     </div>
-                    <a id="forgot-password" asp-page="./ForgotPassword" style="text-decoration: none;">Forgot your password?</a>
-                </div>
+                    <!-- Submit button -->
+                    <button class="btn btn-primary d-block box-shadow w-100" id="submit-id-submit" type="submit">
+                        Login
+                    </button>
+                    <div class="d-flex justify-content-between">
+                        <div class="checkbox">
+                            <label asp-for="Input.RememberMe" class="form-label">
+                                <input class="form-check-input" asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                        </div>
+                        <a id="forgot-password" asp-page="./ForgotPassword" style="text-decoration: none;">Forgot your password?</a>
+                    </div>
+                    <div class="option-container d-flex justify-content-center text-center">
+                        <div class="lead-text">
+                                Do not have an account?<a class="page-link" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register!</a>
+                        </div>
+                </form>
             </div>
-            <div id="login-box-footer" style="padding: 10px 20px; padding-bottom: 23px; padding-top: 18px">
-                <p style="margin-bottom: 0px">
-                    Don't you have an account? <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" style="text-decoration: none;">Register!</a>
-                </p>
-            </div>
-        </form>
+        </div>
     </div>
-    <!-- End: Login Box [En] -->
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=41f7d7846d7d77d06b72b93e8e54a0c6" />
-    <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=f7507586bf5e5e8c232093d9d64136e8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
-</div>
-
+</section>
 @section Scripts {
-<partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }

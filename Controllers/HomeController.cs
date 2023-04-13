@@ -18,12 +18,18 @@ public class HomeController : Controller
         _dbContext = dbContext;
     }
     
-    [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Index()
+    {
+       return View();
+    }
+
+    [AutoValidateAntiforgeryToken]
+    public async Task<IActionResult> Shop()
     {
         List<Book> books = await _dbContext.Books.ToListAsync();
         return View(books);
     }
+
 
     public IActionResult Privacy()
     {

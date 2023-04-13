@@ -29,34 +29,7 @@
                 <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
                 <span class="header__cart-notice">@count</span>
             </a>
-            <style>
-                .header__cart-wrap{
-                    position: relative;
-                    display: inline-block;
-                    padding: 0 2px;
-                    cursor: pointer;
-                    margin: 0 !important;
-                }
-                
-                .header__cart-icon{
-                    font-size: 1.4rem;
-                    color: black;
-                    margin-top: 6px;
-                }
-                
-                .header__cart-notice{
-                    position: absolute;
-                    padding: 2px 5px;
-                    font-size: 1rem;
-                    line-height: 0.8rem;
-                    color: black;
-                    background-color: white;
-                    border-radius: 10px;
-                    border: 2px solid gray;
-                    top: -6px;
-                    right: -10px;
-                }
-            </style>
+ 
         }
         <button type="submit" class="btn ms-auto pe-2 ms-2 ps-2 pt-2 pb-2 me-2">LOG OUT</button>
     </form>
@@ -65,9 +38,12 @@
 }
 else
 {
-    <a class="btn ms-auto pe-2 ms-2 ps-2 pt-2 pb-2 me-0" role="button" asp-area="Identity"
-    asp-page="/Account/Login">LOGIN</a>
-    <a class="btn btn-dark ps-1 pe-1 mt-2 mb-2 me-2 ms-2 pt-2 pb-2" role="button" style="margin-right: 4px"
-    asp-area="Identity" asp-page="/Account/Register">REGISTER&nbsp;</a>
-
+    <div class="d-grid gap-2 d-md-block">
+    <a class="btn btn-outline-primary" role="button" asp-area="Identity" asp-page="/Account/Login">
+        <i class="bi bi-box-arrow-in-right me-2"></i>Login
+    </a>
+        <a class="btn btn-primary" role="button" asp-area="Identity" asp-page="/Account/Register" style="background-color: dodgerblue;">
+        <i class="bi bi-person-plus me-2"></i>Register
+    </a>
+</div>
 }

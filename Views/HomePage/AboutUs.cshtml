@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "AboutUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .position-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .position-card {
+        height: 444px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+        .position-card img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .position-card:hover {
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+        }
+
+        .position-card h5 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .position-card p {
+            text-align: center;
+            margin: 0px;
+        }
+
+        .position-card .name_of_head {
+            font-weight: bold;
+            color: #007bff;
+        }
+</style>
+<div class="page-header text-center py-5">
+    <div class="container">
+        <h2 class="page-title pt-2 mb-3 font-weight-bold">About Us</h2>
+        <div class="page-intro single-col-max-width mx-auto mb-3">
+            FPT Book is a web-based software system developed by NV Truong, Khoa Phan, and Tan Ho. It simplifies and speeds up the process of selecting, ordering, and purchasing books for customers, while also providing an efficient tool for book store owners to manage their sales and inventory. Customers can browse through a vast selection of books, search for their desired titles, and create their own accounts. Book store owners can use the software to track product information, inventory levels, and customer purchases and generate reports and insights to make informed decisions. FPT Book is dedicated to providing a reliable and efficient software system for both book store owners and customers, with a constantly improving product.
+        </div>
+
+    </div><!--//container-->
+</div><!--//page-header-->
+<section class="team-section py-5">
+    <div class="container">
+        <div class="position-info">
+            <div class="position-card">
+                <img src="~/assets/images/avatar-1.jpg" alt="CTO" class="rounded-circle">
+                <h5><span class="name_of_head">Ho Duc Tan</span> <br /> Chief Technology Officer (CTO)</h5>
+                <p>Responsible for overseeing all aspects of FPTBook's technology strategy and implementation, including software development, infrastructure management, and cybersecurity.</p>
+            </div>
+            <div class="position-card">
+                <img src="~/assets/images/avatar-2.png" alt="VP of Engineering" class="rounded-circle">
+                <h5><span class="name_of_head">Nguyen Van Truong</span> <br /> Vice President of Engineering</h5>
+                <p>Leads the engineering team at FPTBook, responsible for driving the development of new products and features, managing technical operations, and ensuring high quality standards are met.</p>
+            </div>
+            <div class="position-card">
+                <img src="~/assets/images/avatar-3.jpg" alt="Head of Product" class="rounded-circle">
+                <h5><span class="name_of_head">Phan Nhat Khoa</span> <br /> Head of Product</h5>
+                <p>Responsible for defining and implementing the product vision, strategy and roadmap. Work with engineering and business development teams to ensure successful, user-accepted product launches.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!--//team-section-->
+
+<section class="press-section py-5">
+    <div class="container">
+        <h3 class="mb-3 text-center">FPTBook in The Press</h3>
+        <div class="single-col-max-width mx-auto mb-3 text-center">Use this section to view the full history of FPTBook as well as the company's terms in detail. If interested you can click here.</div>
+        <div class="text-center mb-5"><a class="btn btn-primary theme-btn-ghost" href="#">Download Document</a></div>
+
+        <div class="row pt-3 mb-5">
+            <div class="col-12 col-md-6 mb-5">
+                <div class="card border-0 shadow-lg position-relative">
+                    <div class="card-header bg-secondary border-0 px-4 py-3">
+                        <h4 class="press-name mb-0 text-white">The Guardian</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="card-title">
+                            <h5><a class="text-link" href="#">FPTBook: The Best Book Buying App of 2023</a></h5>
+                        </div>
+                        <div class="card-text">FPTBook has quickly become the go-to app for book lovers in 2023. With its user-friendly interface, wide selection of books, and affordable prices, FPTBook has set itself apart from the competition.</div>
+                        <a class="more-link my-3 d-block" href="#"><i class="fas fa-external-link-alt me-2"></i>Read more</a>
+                        <small class="text-muted py-1 d-block">April 6, 2023</small>
+                    </div><!--//card-body-->
+                </div><!--//card-->
+            </div><!--//col-->
+            <div class="col-12 col-md-6 mb-5">
+                <div class="card border-0 shadow-lg position-relative">
+                    <div class="card-header bg-secondary border-0 px-4 py-3">
+                        <h4 class="press-name mb-0 text-white">Wired</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="card-title">
+                            <h5><a class="text-link" href="#">FPTBook's Revolutionary Technology is Changing the Way We Read</a></h5>
+                        </div>
+                        <div class="card-text">FPTBook's innovative technology allows readers to customize their reading experience like never before. With its advanced features such as personalized recommendations, customizable fonts and themes, and seamless synchronization across devices, FPTBook is changing the game for book lovers everywhere.</div>
+                        <a class="more-link my-3 d-block" href="#"><i class="fas fa-external-link-alt me-2"></i>Read more</a>
+                        <small class="text-muted py-1 d-block">March 29, 2023</small>
+                    </div><!--//card-body-->
+                </div><!--//card-->
+            </div><!--//col-->
+            <div class="col-12 col-md-6 mb-5">
+                <div class="card border-0 shadow-lg position-relative">
+                    <div class="card-header bg-secondary border-0 px-4 py-3">
+                        <h4 class="press-name mb-0 text-white">Forbes</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="card-title">
+                            <h5><a class="text-link" href="#">FPTBook: The Future of the Publishing Industry</a></h5>
+                        </div>
+                        <div class="card-text">With its disruptive technology and innovative business model, FPTBook is poised to become a major player in the publishing industry. By empowering authors and readers alike, FPTBook is changing the way we think about books and the publishing process.</div>
+                        <a class="more-link my-3 d-block" href="#"><i class="fas fa-external-link-alt me-2"></i>Read more</a>
+                        <small class="text-muted py-1 d-block">March 15, 2023</small>
+                    </div>
+                </div>
+            </div>
+</section>
