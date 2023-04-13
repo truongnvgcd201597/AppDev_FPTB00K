@@ -26,11 +26,14 @@
                 </tr>
                 </thead>
                 <tbody class="text-center">
+                @if (Model.Users == null || !Model.Users.Any())
+                    {
+                        <tr class="warning no-result">
+                            <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                        </tr>
+                   }
                 @foreach (var item in Model.Users)
                 {
-                    <tr class="warning no-result">
-                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
-                    </tr>
                     <tr>
                         <td><span style="color: rgb(33, 37, 41);">@Html.DisplayFor(modelItem => item.Fullname)</span><br></td>
                         <td><span style="color: rgb(33, 37, 41); background-color: var(--bs-table-bg);">@Html.DisplayFor(modelItem => item.Email)</span><br></td>

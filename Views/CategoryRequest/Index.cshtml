@@ -23,11 +23,14 @@
                     </tr>
                 </thead>
                 <tbody class="text-center">
-                    @foreach (var item in Model)
+                    @if (Model == null || !Model.Any())
                     {
                         <tr class="warning no-result">
                             <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
                         </tr>
+                    }
+                    @foreach (var item in Model)
+                    {
                         <tr>
                             <td>@Html.DisplayFor(modelItem => item.Id)</td>
                             <td><span style="color: rgb(33, 37, 41);">@(Html.DisplayFor(modelItem => item.Name))</span><br>
