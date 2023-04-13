@@ -52,22 +52,56 @@
                                 <a class="nav-link ms-0" asp-controller="Book" asp-action="Index">All Books</a>
                             </li>
                         }
+
                     }
-                    <li class="nav-item">
-                        <a class="nav-link ms-0" asp-controller="HomePage" asp-action="FAQ">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ms-0" asp-controller="HomePage" asp-action="AboutUs">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ms-0" asp-controller="HomePage" asp-action="Contact">Contact</a>
-                    </li>
+                    @if (!User.IsInRole(Role.Admin) && !User.IsInRole(Role.Owner))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="FAQ">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="Contact">Contact</a>
+                        </li>
+                    }
+
+                    @if (User.IsInRole(Role.Admin))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="User" asp-action="ViewCustomer">Manage Customer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="User" asp-action="ViewOwner">Manage Store Owner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="CategoryRequest" asp-action="Index">Manage Category Request</a>
+                        </li>
+
+
+                    }
+                    @if (User.IsInRole(Role.Owner))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="Book" asp-action="Index">Manage Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="Order" asp-action="Index">Manage Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-0" asp-controller="Category" asp-action="Index">Manage Category</a>
+                        </li>
+
+                    }
+
                 </ul>
+
                 <partial name="_LoginPartial" />
             </div>
         </nav>
     </div>
-            @RenderBody()
+    @RenderBody()
     </div>
     <div class="footer_section layout_padding">
         <div class="container">
