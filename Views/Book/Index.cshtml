@@ -8,103 +8,118 @@
     ViewBag.Title = "Book";
     Layout = "_Layout";
 }
-
-<div class="pe-0" style="display: flex; justify-content: space-around; ">
-    @if (User.IsInRole(Role.Owner))
-    {
-        <a class="btn btn-dark ps-1 pe-1 mt-2 mb-2 me-2 ms-2 pt-2 pb-2" role="button" style="margin-right: 4px"
-           asp-controller="Book" asp-action="Create">Create New</a>
+<style>
+    .wrapper-container-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
     }
-    
-    <form asp-controller="Book" asp-action="Index" style="height: fit-content; margin-top: auto;">
-        <p>
-            <select asp-for="BookCategory" asp-items="Model.Categories">
-                <option value="">All</option>
-            </select>
-            Title: <input type="text" asp-for="SearchString"/>
-            <input type="submit" value="Filter"/>
-        </p>
-    </form>
-</div>
 
-<div class="container">
-    <div data-reflow-type="product-list" data-reflow-layout="cards" data-reflow-order="date_desc"
-        data-reflow-show="image,name,excerpt,price,pagination">
-        <div class="reflow-product-list ref-cards">
-            <div class="ref-products">
-                @{
-                    foreach (var item in Model.Books)
-                    {
-                        var userId = _userManager.GetUserId(User);
-                        <div class="ref-product">
-                            <div class="ref-media">
-                                <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id">
-                                    <img class="ref-image" src="@item.Image" loading="lazy" />
-                                </a>
-                            </div>
-                            <div class="ref-product-data">
-                                <div class="ref-product-info">
-                                    <h5 class="ref-name">
-                                        <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id"
-                                           style="text-decoration: none;">
-                                            @item.Title
-                                        </a>
-                                    </h5>
-                                    <p class="ref-excerpt"></p>
-                                </div>
-                                <strong class="ref-price">$@item.Price</strong>
-                            </div>
-                            <div class="ref-addons" style="display: flex;justify-content: space-evenly">
-                                @if (User.IsInRole(Role.Owner))
-                                    {
-                                        @Html.ActionLink("Update", "Update", "Book", new
-                                        {
-                                            id = item.Id
-                                        }, new
-                                        {
-                                            @class = "ref-button preview-toggle"
-                                        })
-                                        @Html.ActionLink("Delete", "Delete", "Book", new
-                                        {                                                                                                   
-                                            id = item.Id
-                                        }, new
-                                        {
-                                            @class = "ref-button preview-toggle"
-                                        })
-                                    }
-                                    else if (User.IsInRole(Role.Admin))
-                                    {
-                                        @Html.ActionLink("Detail", "Detail", "Book", new
-                                        {
-                                            id = item.Id
-                                        }, new
-                                        {
-                                            @class = "ref-button preview-toggle"
-                                        })
-                                    }
-                                    else
-                                    {
-                                        @Html.ActionLink("Detail", "Detail", "Book", new
-                                        {
-                                            id = item.Id
-                                        }, new
-                                        {
-                                            @class = "ref-button preview-toggle"
-                                        })
-                                        @Html.ActionLink("Add to Cart", "Create", "OrderedBook", new
-                                        {
-                                            bookId = item.Id,
-                                            userId,
-                                        }, new
-                                        {
-                                            @class = "ref-button preview-toggle"
-                                        })
-                                    }
-                            </div>
-                        </div>
-                    }
+    .card-item-product {
+        width: 22%;
+        margin: 10px 14px;
+        padding: 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 4px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: all 0.3s ease;
+    }
+
+        .card-item-product:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-item-product .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
+
+        .card-item-product .card-body-product {
+            padding: 0;
+        }
+
+            .card-item-product .card-body-product .text-center {
+                margin-top: 16px;
+            }
+
+                .card-item-product .card-body-product .text-center a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #000;
+                    transition: all 0.3s ease;
                 }
+
+                    .card-item-product .card-body-product .text-center a:hover {
+                        color: #f44336;
+                    }
+
+            .card-item-product .card-body-product .total {
+                margin-top: 16px;
+            }
+
+                .card-item-product .card-body-product .total span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #000;
+                }
+
+                    .card-item-product .card-body-product .total span:last-child {
+                        color: #f44336;
+                    }
+</style>
+<div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+    <div class="row">
+        @if (User.IsInRole(Role.Owner))
+        {
+            <div class="col-md-4">
+                <a class="btn btn-dark ps-1 pe-1 mt-2 mb-2 me-2 ms-2 pt-2 pb-2" role="button" style="margin-right: 4px"
+               asp-controller="Book" asp-action="Create">Create New</a>
             </div>
+        }
+
+        <div class="col-md-8">
+            <form class="d-flex justify-content-center align-items-center" asp-controller="Book" asp-action="Index" style="height: fit-content;">
+                <div class="form-group me-2">
+                    <select asp-for="BookCategory" asp-items="Model.Categories" class="form-control">
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <div class="form-group me-2">
+                    <input type="text" asp-for="SearchString" class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
+
+
+<div class="wrapper-container-list">
+    @foreach (var item in Model.Books)
+    {
+        var userId = _userManager.GetUserId(User);
+        <div class="card-item-product">
+            <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id">
+                <img src="@item.Image" class="card-img-top" loading="lazy" />
+            </a>
+
+            <div class="card-body-product">
+                <div class="text-center">
+                    <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id" class="text-muted mb-4">
+                        @item.Title
+                    </a>
+                </div>
+                <div class="d-flex justify-content-between total font-weight-bold mt-4">
+                    <span>Total</span><span>$@item.Price</span>
+                </div>
+            </div>
+        </div>
+    }
 </div>
