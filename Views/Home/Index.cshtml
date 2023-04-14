@@ -1,4 +1,10 @@
 ﻿
+@model FPTBook.ViewModels.BookCategoryViewModels
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using FPTBook.Data
+@inject UserManager<ApplicationUser> _userManager;
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -48,105 +54,24 @@
         </div>
         <div class="movies_section_2 layout_padding">
             <h2 class="letest_text">Latest Books</h2>
-            <div class="seemore_bt"><a href="#">See More</a></div>
-            <div class="movies_main">
-                <div class="iamge_movies_main">
-                    <div class="iamge_movies">
-                        <div class="image_3">
-                            <img src="~/assets/images/img-3.png" class="image" style="width:100%">
-                            <div class="middle">
-                                <div class="playnow_bt">Play Now</div>
+            <div class="wrapper-container-list">
+                @foreach (var item in Model.Books.TakeLast(4))
+                {
+                    var userId = _userManager.GetUserId(User);
+                    <div class="card-item-product">
+                        <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id">
+                            <img src="@item.Image" class="card-img-top" loading="lazy" />
+                        </a>
+
+                        <div class="card-body-product">
+                            <div class="text-center">
+                                <a asp-controller="Book" asp-action="Detail" asp-route-id="@item.Id" class="text-muted mb-4">
+                                    @item.Title
+                                </a>
                             </div>
                         </div>
-                        <h1 class="code_text">CADE Prlor</h1>
-                        <p class="there_text">There are many variations </p>
-                        <div class="star_icon">
-                            <ul>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="iamge_movies">
-                        <div class="image_3">
-                            <img src="~/assets/images/img-4.png" class="image" style="width:100%">
-                            <div class="middle">
-                                <div class="playnow_bt">Play Now</div>
-                            </div>
-                        </div>
-                        <h1 class="code_text">Bradon</h1>
-                        <p class="there_text">There are many variations </p>
-                        <div class="star_icon">
-                            <ul>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="iamge_movies">
-                        <div class="image_3">
-                            <img src="~/assets/images/img-5.png" class="image" style="width:100%">
-                            <div class="middle">
-                                <div class="playnow_bt">Play Now</div>
-                            </div>
-                        </div>
-                        <h1 class="code_text">Anton Levin</h1>
-                        <p class="there_text">There are many variations </p>
-                        <div class="star_icon">
-                            <ul>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="iamge_movies">
-                        <div class="image_3">
-                            <img src="~/assets/images/img-6.png" class="image" style="width:100%">
-                            <div class="middle">
-                                <div class="playnow_bt">Play Now</div>
-                            </div>
-                        </div>
-                        <h1 class="code_text">Sacha Styles</h1>
-                        <p class="there_text">There are many variations </p>
-                        <div class="star_icon">
-                            <ul>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="iamge_movies">
-                        <div class="image_3">
-                            <img src="~/assets/images/img-7.png" class="image" style="width:100%">
-                            <div class="middle">
-                                <div class="playnow_bt">Play Now</div>
-                            </div>
-                        </div>
-                        <h1 class="code_text">Katledrazdu</h1>
-                        <p class="there_text">There are many variations </p>
-                        <div class="star_icon">
-                            <ul>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                                <i class="fa-sharp fa-solid fa-star" style="color: #0b86f9;"></i>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
         <div class="seebt_1"><a href="#">See More</a></div>
