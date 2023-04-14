@@ -35,11 +35,14 @@
                         </thead>
                         <tbody style="text-align: center">
                         @{
+                                @if (Model.Orders == null || !Model.Orders.Any())
+                                {
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                }
                             foreach (var item in Model.Orders)
                             {
-                                <tr class="warning no-result">
-                                    <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
-                                </tr>
                                 <tr>
                                     <td>@Html.DisplayFor(modelItem => item.Id)</td>
                                     @if (User.IsInRole(Role.Owner))
