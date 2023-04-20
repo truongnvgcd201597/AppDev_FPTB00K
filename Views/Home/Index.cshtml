@@ -9,8 +9,14 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
+<style>
+    .wrapper-container-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+</style>
 <!-- banner section end -->
 <div class="banner_section layout_padding">
     <div class="container">
@@ -27,7 +33,9 @@
                 </div>
                 <div class="banner_taital">Enjoy <br>a book like sipping a cup of tea</div>
                 <p class="banner_text">Reading can help improve brain function by increasing vocabulary, improving memory, and enhancing critical thinking skills.</p>
-                <div class="see_bt"><a href="#">See More</a></div>
+                <div class="see_bt">                        
+                    <a class="nav-link ms-0" asp-controller="Book" asp-action="Index">All Books</a>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="play_icon">

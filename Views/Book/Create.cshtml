@@ -4,83 +4,45 @@
     ViewBag.Title = "Create New Book";
     Layout = "_Layout";
 }
-
-<h1>Create</h1>
-
-<hr />
-
-<div class="row justify-content-center">
-    <div class="col-md-6 text-center">
-        <form asp-action="Create">
-            @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group text-center" onchange="ShowPrev">
-                <img id="ProfilePicturePreview"  class="border-info rounded-circle" style="max-width: 150px" />
-            </div>*@
-            @*<div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
-                <span asp-validation-for="Image" class="text-danger"></span>
-            </div>*@
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input style="text-align: center" asp-for="Title" class="form-control"/>
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Author" class="control-label"></label>
-                <input style="text-align: center" asp-for="Author" class="form-control"/>
-                <span asp-validation-for="Author" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input style="text-align: center" asp-for="Image" class="form-control"/>
-                <span asp-validation-for="Image" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Summary" class="control-label"></label>
-                <input style="text-align: center" asp-for="Summary" class="form-control"/>
-                <span asp-validation-for="Summary" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input style="text-align: center" asp-for="Price" class="form-control"/>
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            @*<div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <br/>
-                <select asp-for="Category" asp-items="Model.Categories" class="form-control">
-                    <option class="form-control" value="" disabled selected>Click to choose</option>
-                </select>
-                <span asp-validation-for="Category" class="text-danger"></span>
-            </div>*@
-            <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <select style="text-align: center" asp-for="Category" class="form-control" asp-items="ViewData.Model.Categories"></select>
-            </div>
-            <br/>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary"/>
-                <a class="btn btn-danger" asp-action="Index">Cancel</a>
-            </div>
-        </form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form asp-action="Create">
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label">Title</label>
+                    <input style="text-align: center" asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Author" class="control-label">Author</label>
+                    <input style="text-align: center" asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label">Image</label>
+                    <input style="text-align: center" asp-for="Image" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Summary" class="control-label">Summary</label>
+                    <textarea style="text-align: center" asp-for="Summary" class="form-control"></textarea>
+                    <span asp-validation-for="Summary" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label">Price</label>
+                    <input style="text-align: center" asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Category" class="control-label">Category</label>
+                    <select style="text-align: center" asp-for="Category" class="form-control" asp-items="ViewData.Model.Categories"></select>
+                </div>
+                <br />
+                <div class="form-group text-center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-danger" asp-action="Index">Cancel</a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
-@*
-<script>
-    $(document).ready(function () {
-        var output = document.getElementById('ProfilePicturePreview');
-        output.src = $("#Image").val();
-    })
-    $("#Image").on("change", function () {
-        var output = document.getElementById('ProfilePicturePreview');
-        output.src = $(this).target.result;
-    })
-    function ShowPreview(input) {   
-        var image = document.getElementyId("ProfilePicturePreview");
-        image.src = e.target.result;
-    }  
-    
-</script>*@
-

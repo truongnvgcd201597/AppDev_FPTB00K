@@ -4,52 +4,69 @@
     ViewBag.Title = "Owners";
     Layout = "_Layout";
 }
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #f5f5f5;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .table-hover tbody tr:hover td {
+            color: #000;
+        }
+
+        .table-hover tbody tr:hover a {
+            color: #fff;
+        }
+
+</style>
+
 
 <div class="container">
-    <h1 class="text-center"><strong>List of Owner</strong></h1>
+    <h1 class="text-center"><strong>List of Owners</strong></h1>
     <form asp-controller="User" asp-action="Index">
-        <p>
-            User: <input type="text" name="SearchString" />
-            <input type="submit" value="Filter" />
-        </p>
-    </form>
-    <div class="col-md-12 search-table-col" style="padding-top: 0px;margin-top: 0px;"><span class="counter pull-right"></span>
-            <div class="table-responsive table table-hover table-bordered results">
-                <table class="table table-hover table-bordered">
-                    <thead class="bill-header cs">
-                    <tr>
-                        <th id="trs-hd-1" class="col-lg-2">Full Name</th>
-                        <th id="trs-hd-2" class="col-lg-2">Email</th>
-                        <th id="trs-hd-3" class="col-lg-2">Phone Number</th>
-                        <th id="trs-hd-4" class="col-lg-2">HOME ADDRESS</th>
-                        <th id="trs-hd-5" class="col-lg-2">Action</th>
-                    </tr>
-                    </thead>
-                    <tbody class="text-center">
-                    @if(Model == null || !Model.Any())
-                    {
-                        <tr class="warning no-result">
-                            <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
-                        </tr>
-                    }
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td><span style="color: rgb(33, 37, 41);">@Html.DisplayFor(modelItem => item.Fullname)</span><br></td>
-                            <td><span style="color: rgb(33, 37, 41); background-color: var(--bs-table-bg);">@Html.DisplayFor(modelItem => item.Email)</span><br></td>
-                            <td><span style="color: rgb(33, 37, 41);">@Html.DisplayFor(modelItem => item.PhoneNumber)</span><br></td>
-                            <td><span style="color: rgb(33, 37, 41);">@Html.DisplayFor(modelItem => item.HomeAddress)</span><br></td>
-                            <td>
-                                <button class="btn btn-dark" type="button">
-                                    <a class="text-white" style="text-decoration: none" asp-controller="User" asp-action="ChangeOwnerPassword" asp-route-id=@item.Id>
-                                        <i class="bi bi-pencil-square"></i> Change Password
-                                    </a>
-                                </button>
-                            </td>
-                        </tr>
-                    }
-                    </tbody>
-                </table>
+        <div class="form-group">
+            <label for="search" class="col-sm-2 control-label">Search</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="search" name="SearchString">
             </div>
         </div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+    <div class="table-responsive mt-5">
+        <table class="table table-hover table-bordered">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th class="col-lg-2">Full Name</th>
+                    <th class="col-lg-2">Email</th>
+                    <th class="col-lg-2">Phone Number</th>
+                    <th class="col-lg-4">Home Address</th>
+                    <th class="col-lg-2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model == null || !Model.Any())
+                {
+                    <tr class="warning no-result">
+                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                    </tr>
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Fullname)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                        <td>@Html.DisplayFor(modelItem => item.HomeAddress)</td>
+                        <td>
+                            <button class="btn btn-secondary">
+                                <a class="text-white" style="text-decoration: none" asp-controller="User" asp-action="ChangeOwnerPassword" asp-route-id=@item.Id>
+                                    <i class="bi bi-pencil-square"></i> Change Password
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

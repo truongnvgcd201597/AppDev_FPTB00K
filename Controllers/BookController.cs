@@ -19,20 +19,6 @@ public class BookController : Controller
         _db = db;
     }
 
-    /*[HttpGet]*/
-    // public IActionResult Index()
-    // {
-    //     var booksListAsync = _db.Books.Include(c => c.Category).ToList();
-    //     var categoriesName = from n in _db.Categories
-    //         select n.Name;
-    //     SelectList categories = new SelectList(categoriesName);
-    //     BookCategoryViewModels bookCategoryViewModels = new BookCategoryViewModels()
-    //     {
-    //         Books = booksListAsync,
-    //         Categoies = categories
-    //     };
-    //     return View(bookCategoryViewModels);
-    // }
     [HttpGet]
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Index()

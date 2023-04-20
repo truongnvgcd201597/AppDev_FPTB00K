@@ -6,91 +6,60 @@
     ViewBag.Title = "Book Details";
     Layout = "_Layout";
 }
+<div class="container-fluid">
+    <div class="p-3 main-section bg-white">
+        <div class="row m-0">
+            <div class="col-lg-4 left-side-product-box pb-3">
+                <img class="ref-image active"
+                     src="@Model.Book.Image"
+                     data-reflow-preview-type="image"
+                     style="margin-top: 20px" />
+            </div>
+            <div class="col-lg-8">
+                <div class="right-side-pro-detail border p-3 m-0">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="m-0 p-0">@Model.Book.Title</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="m-0 p-0 price-pro">$@Model.Book.Price</p>
+                        </div>
+                        <div class="col-lg-12 pt-2">
+                            <h5>Product Detail</h5>
+                            <span>
+                                @Model.Book.Summary
+                            </span>
+                            <hr class="m-0 pt-2 mt-2">
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <div class="row">
+                                @{
+                                    var userId = _userManager.GetUserId(User);
+                                    if (User.IsInRole(Role.Owner))
+                                    {
+                                        <a asp-action="Update" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-primary preview-toggle">Update</a>
+                                        <a asp-action="Delete" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-danger preview-toggle">Delete</a>
+                                    }
+                                    else if (User.IsInRole(Role.Admin))
+                                    {
+                                        <!-- Insert code for admin role here -->
+                                    }
+                                    else
+                                    {
+                                        <a asp-action="Create" asp-controller="OrderedBook" asp-route-bookId="@Model.Book.Id" asp-route-userId="@userId" class="btn btn-success">Add to Cart</a>
+                                        <a asp-action="Index" asp-controller="Book" class="btn btn-secondary" style="margin-left: 10px">Back</a>
+                                    }
+                                }
+                            </div>
+                        </div>
 
-<div class="container">
-  <div
-    class="text-start"
-    data-reflow-type="product"
-    data-reflow-product="1836211702"
-    data-reflow-shoppingcart-url="cart.html"
-  >
-    <div class="reflow-product">
-      <div class="ref-media">
-        <div class="ref-preview">
-          <img
-            class="ref-image active"
-            src="@Model.Book.Image"
-            data-reflow-preview-type="image"
-            style="margin-top: 20px"
-          />
+                    </div>
+            </div>
         </div>
-      </div>
-      <div class="ref-product-data">
-        <h2 class="ref-name">@Model.Book.Title</h2>
-        <div class="ref-categories">
-          <span class="ref-category">@Model.Book.Category.Name</span>
+        <div class="row mt-3 p-0 text-center pro-box-section">
+            <div class="col-lg-12 text-center pt-3">
+                <h4>More Product</h4>
+            </div>
         </div>
-        <strong class="ref-price">$@Model.Book.Price</strong
-        ><span
-             data-reflow-type="add-to-cart"
-             data-reflow-shoppingcart-url="cart.html"
-             data-reflow-addtocart-text=""
-             data-reflow-product="1836211702"
-         ><div class="reflow-add-to-cart ref-product-controls">
-                  <span
-                      data-reflow-product="1836211702"
-                      data-reflow-max-qty="999"
-                      data-reflow-quantity="1">
-                  </span>
-                  @{
-                      var userId = _userManager.GetUserId(User);
-                      if (User.IsInRole(Role.Owner))
-                      {
-                          @Html.ActionLink("Update", "Update", "Book", new
-                          {
-                              id = Model.Book.Id
-                          }, new
-                          {
-                              @class = "ref-button preview-toggle"
-                          })
-                          @Html.ActionLink("Delete", "Delete", "Book", new
-                          {
-                              id = Model.Book.Id,
-                          }, new
-                          {
-                              @class = "ref-button preview-toggle"
-                          })
-                      }
-                      else if (User.IsInRole(Role.Admin))
-                      {
-                          
-                      }
-                      else
-                      {
-                          @Html.ActionLink("Add to Cart", "Create", "OrderedBook", new
-                          {
-                              bookId = Model.Book.Id,
-                              userId,
-                          }, new
-                          {
-                              @class = "ref-button"
-                          })
-                          @Html.ActionLink("Back", "Index", "Book", new
-                          {
-                              
-                          }, new
-                          {
-                              @class = "ref-button",
-                              @style = "margin-left: 10px"
-                          })
-                      }
-                  }
-              </div>
-          </span>
-          <div class="ref-description">
-          <p>@Model.Book.Summary</p>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+</div>  
