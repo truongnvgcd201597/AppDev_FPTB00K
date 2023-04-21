@@ -65,13 +65,13 @@
                     @if (!User.IsInRole(Role.Admin) && !User.IsInRole(Role.Owner))
                     {
                         <li class="nav-item">
-                            <a style="@(currentRoute == "/HomePage/FAQ" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="FAQ">FAQ</a>
+                            <a style="@(currentRoute == "/Home/FAQ" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Home" asp-action="FAQ">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a style="@(currentRoute == "/HomePage/AboutUs" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="AboutUs">About Us</a>
+                            <a style="@(currentRoute == "/Home/AboutUs" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Home" asp-action="AboutUs">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a style="@(currentRoute == "/HomePage/Contact" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="Contact">Contact</a>
+                            <a style="@(currentRoute == "/Home/Contact" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                     }
 
