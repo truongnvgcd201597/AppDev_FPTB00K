@@ -46,7 +46,7 @@
                                     }
                                     else
                                     {
-                                        <a asp-action="Create" asp-controller="OrderedBook" asp-route-bookId="@Model.Book.Id" asp-route-userId="@userId" class="btn btn-success">Add to Cart</a>
+                                        <a asp-action="Create" asp-controller="Cart" asp-route-bookId="@Model.Book.Id" asp-route-userId="@userId" class="btn btn-success">Add to Cart</a>
                                         <a asp-action="Index" asp-controller="Book" class="btn btn-secondary" style="margin-left: 10px">Back</a>
                                     }
                                 }

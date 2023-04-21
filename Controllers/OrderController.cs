@@ -65,7 +65,7 @@ public class OrderController : Controller
 
     [HttpGet]
     [AutoValidateAntiforgeryToken]
-    public async Task<IActionResult> GoCheckOut(string id)
+    public async Task<IActionResult> CheckoutProceed(string id)
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         var orderedBook = await _context.OrderedBooks
@@ -107,13 +107,6 @@ public class OrderController : Controller
         }
         await _context.SaveChangesAsync();
         TempData["SUCCESS"] = "Checked out successfully";
-        return RedirectToAction("Success");
-    }
-        
-    [HttpGet]
-    [AutoValidateAntiforgeryToken]
-    public IActionResult Success()
-    {
-        return View();
+        return RedirectToAction("Index", "Home");
     }
 }

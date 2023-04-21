@@ -1,9 +1,9 @@
-@using Microsoft.AspNetCore.Identity
+﻿@using Microsoft.AspNetCore.Identity
 @model List<OrderedBook>
 @inject UserManager<ApplicationUser> _userManager
 @{
-  ViewBag.Title = "Cart";
-  Layout = "_Layout";
+    ViewBag.Title = "Cart Details";
+    Layout = "_Layout";
 }
 
 <section class="h-100 gradient-custom">
@@ -48,9 +48,9 @@
                                         <!-- Quantity -->
                                         <div class="d-flex mb-4" style="max-width: 300px">
                                             <td class="align-middle" id="quantity">
-                                                <a class="value-button" asp-controller="OrderedBook" asp-action="DecreaseQuantity" asp-route-id=@item.Id id="decrease">-</a>
+                                                <a class="value-button" asp-controller="Cart" asp-action="DecreaseQuantity" asp-route-id=@item.Id id="decrease">-</a>
                                                 <input type="number" disabled="disabled" id="number" value="@item.Quantity" />
-                                                <a class="value-button" asp-action="IncreaseQuantity" asp-controller="OrderedBook" asp-route-id=@item.Id id="increase">+</a>
+                                                <a class="value-button" asp-action="IncreaseQuantity" asp-controller="Cart" asp-route-id=@item.Id id="increase">+</a>
                                             </td>
                                         </div>
                                         <!-- Quantity -->
@@ -78,7 +78,7 @@
                                 </div>
                             }
                         }
-                       </div>
+                    </div>
                 </div>
                 <div class="card mb-4 mb-lg-0">
                 </div>
@@ -89,9 +89,9 @@
                         <h5 class="mb-0">Summary</h5>
                     </div>
                     <div class="card-body">
-                            <div>
-                                @{
-                                    var userId = _userManager.GetUserId(User);
+                        <div>
+                            @{
+                                var userId = _userManager.GetUserId(User);
                                 <div style="display: flex; flex-direction: column; justify-content: center;">
                                     <div>
                                         @if (@totalQuantity <= 1)
@@ -107,14 +107,14 @@
                                     </div>
                                     @if (@totalQuantity > 0)
                                     {
-                                        <a type="button" class="btn btn-primary btn-lg" asp-controller="Order" asp-action="GoCheckOut" asp-route-id="userId">
+                                        <a type="button" class="btn btn-primary btn-lg" asp-controller="Order" asp-action="CheckoutProceed" asp-route-id="userId">
                                             Go to checkout
                                         </a>
                                     }
                                 </div>
 
-                                }
-                            </div>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

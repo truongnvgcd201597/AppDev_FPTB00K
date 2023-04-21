@@ -57,13 +57,13 @@
                     @if (!User.IsInRole(Role.Admin) && !User.IsInRole(Role.Owner))
                     {
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="FAQ">FAQ</a>
+                            <a class="nav-link ms-0" asp-controller="Home" asp-action="FAQ">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="AboutUs">About Us</a>
+                            <a class="nav-link ms-0" asp-controller="Home" asp-action="AboutUs">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="HomePage" asp-action="Contact">Contact</a>
+                            <a class="nav-link ms-0" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                     }
 

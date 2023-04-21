@@ -11,13 +11,13 @@ namespace FPTBook.Controllers;
 
 [Authorize]
 [AutoValidateAntiforgeryToken]
-public class OrderedBookController : Controller
+public class CartController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly UserManager<ApplicationUser> _userManager;
     
 
-    public OrderedBookController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+    public CartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
     {
         _context = context;
         _userManager = userManager;
