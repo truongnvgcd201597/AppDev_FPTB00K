@@ -1,4 +1,7 @@
 ﻿@using FPTBook.Data
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using System.Diagnostics;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,8 +37,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
 <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-
 <body>
+    @{
+
+        string currentRoute = HttpContextAccessor.HttpContext.Request.Path;
+        Debug.WriteLine(currentRoute);
+    }
+
     <div class="header_section">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="logo" href="/"><img src="~/assets/images/logo.png" /></a>
@@ -49,7 +57,7 @@
                         if (User.IsInRole(Role.Customer))
                         {
                             <li class="nav-item">
-                                <a class="nav-link ms-0" asp-controller="Book" asp-action="Index">All Books</a>
+                                <a style="@(currentRoute == "/Book" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Book" asp-action="Index">All Books</a>
                             </li>
                         }
 
@@ -57,40 +65,41 @@
                     @if (!User.IsInRole(Role.Admin) && !User.IsInRole(Role.Owner))
                     {
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                            <a style="@(currentRoute == "/HomePage/FAQ" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="FAQ">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                            <a style="@(currentRoute == "/HomePage/AboutUs" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="AboutUs">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Home" asp-action="Contact">Contact</a>
+                            <a style="@(currentRoute == "/HomePage/Contact" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="HomePage" asp-action="Contact">Contact</a>
                         </li>
                     }
 
                     @if (User.IsInRole(Role.Admin))
                     {
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="User" asp-action="ViewCustomer">Manage Customer</a>
+                            <a style="@(currentRoute == "/User/ViewCustomer" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="User" asp-action="ViewCustomer">Manage Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="User" asp-action="ViewOwner">Manage Store Owner</a>
+                            <a style="@(currentRoute == "/User/ViewOwner" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="User" asp-action="ViewOwner">Manage Store Owner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="CategoryRequest" asp-action="Index">Manage Category Request</a>
+                            <a style="@(currentRoute == "/CategoryRequest" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="CategoryRequest" asp-action="Index">Manage Category Request</a>
                         </li>
 
 
                     }
+
                     @if (User.IsInRole(Role.Owner))
                     {
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Book" asp-action="Index">Manage Books</a>
+                            <a style="@(currentRoute == "/Book" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Book" asp-action="Index">Manage Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Order" asp-action="Index">Manage Orders</a>
+                            <a style="@(currentRoute == "/Order" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Order" asp-action="Index">Manage Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-0" asp-controller="Category" asp-action="Index">Manage Category</a>
+                            <a style="@(currentRoute == "/Category" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Category" asp-action="Index">Manage Category</a>
                         </li>
 
                     }

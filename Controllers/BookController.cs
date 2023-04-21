@@ -23,6 +23,7 @@ public class BookController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Index()
     {
+
         var booksListAsync = await _db.Books.Include(c => c.Category).ToListAsync();
         var categoriesName = from n in _db.Categories
             select n.Name;
