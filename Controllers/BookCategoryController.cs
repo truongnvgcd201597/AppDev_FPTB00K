@@ -11,33 +11,48 @@ namespace FPTBook.Controllers;
 [AutoValidateAntiforgeryToken]
 public class BookCategoryController : Controller
 {
-    private ApplicationDbContext _db;
+    private ApplicationDbContext _dbContext;
+    private readonly ILogger<BookCategoryController> _logger;
 
     public BookCategoryController(ApplicationDbContext db)
     {
-        _db = db;
+        _dbContext = db;
     }
 
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Index()
     {
-        var categories = await _db.Categories.ToListAsync();
+        var categories = await _dbContext.Categories.ToListAsync();
         return View(categories);
     }
 
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Detail(string id)
     {
-        int categoryId = Int32.Parse(id);
-        var categories = await _db.Categories.FindAsync(categoryId);
-
-        if (categories == null)
+        try
         {
-            return Content("This categories doesn't exist");
-        }
+            int categoryId;
+            if (!Int32.TryParse(id, out categoryId))
+            {
+                return Content("Invalid category ID");
+            }
 
-        return View(categories);
+            var category = await _dbContext.Categories.FindAsync(categoryId);
+
+            if (category == null)
+            {
+                return Content("This category doesn't exist");
+            }
+
+            return View(category);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while getting the category details");
+            return Content("An error occurred while getting the category details");
+        }
     }
+
 
     [HttpGet]
     [AutoValidateAntiforgeryToken]
@@ -57,8 +72,8 @@ public class BookCategoryController : Controller
             {
                 Name = categoryCreate.Name
             };
-            var savedCategory = await _db.Categories.AddAsync(newCategory);
-            await _db.SaveChangesAsync();
+            var savedCategory = await _dbContext.Categories.AddAsync(newCategory);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
@@ -69,12 +84,12 @@ public class BookCategoryController : Controller
     public async Task<IActionResult> Delete(string id)
     {
         int categoryId = Int32.Parse(id);
-        var categories = await _db.Categories.FindAsync(categoryId);
+        var categories = await _dbContext.Categories.FindAsync(categoryId);
 
         if (categories != null)
         {
-            _db.Categories.Remove(categories);
-            await _db.SaveChangesAsync();
+            _dbContext.Categories.Remove(categories);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
@@ -86,7 +101,7 @@ public class BookCategoryController : Controller
     public async Task<IActionResult> Update(string id)
     {
         int categoryId = Int32.Parse(id);
-        var categories = await _db.Categories.FindAsync(categoryId);
+        var categories = await _dbContext.Categories.FindAsync(categoryId);
 
         CategoryUpdate formUpdateCategory = new CategoryUpdate()
         {
@@ -100,9 +115,9 @@ public class BookCategoryController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Update(CategoryUpdate categoryUpdate)
     {
-        var category = await _db.Categories.FindAsync(categoryUpdate.Id);
+        var category = await _dbContext.Categories.FindAsync(categoryUpdate.Id);
         category.Name = categoryUpdate.Name;
-        await _db.SaveChangesAsync();
+        await _dbContext.SaveChangesAsync();
         string cateId = $"{categoryUpdate.Id}";
         return RedirectToAction("Detail", new { id = cateId });
     }

@@ -13,12 +13,12 @@ namespace FPTBook.Controllers;
 [AutoValidateAntiforgeryToken]
 public class OrderController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ApplicationDbContext _dbContext;
     private UserManager<ApplicationUser> _userManager;
 
     public OrderController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
     {
-        _context = context;
+        _dbContext = context;
         _userManager = userManager;
     }
 
@@ -29,8 +29,8 @@ public class OrderController : Controller
         {
             if (HttpContext.User.IsInRole(Role.Owner))
             {
-                var user = from u in _context.ApplicationUsers select u;
-                var order = from o in _context.Orders select o;
+                var user = from u in _dbContext.ApplicationUsers select u;
+                var order = from o in _dbContext.Orders select o;
                 OrdersDetail orderDetail = new OrdersDetail()
                 {
                     Users = user.ToList(),
@@ -39,8 +39,8 @@ public class OrderController : Controller
                 return View(orderDetail);
             }
         }
-        var users = from u in _context.ApplicationUsers select u;
-        var orders = from o in _context.Orders select o;
+        var users = from u in _dbContext.ApplicationUsers select u;
+        var orders = from o in _dbContext.Orders select o;
         string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         OrdersDetail ordersDetail = new OrdersDetail()
         {
@@ -54,21 +54,32 @@ public class OrderController : Controller
     [AutoValidateAntiforgeryToken]
     public IActionResult Detail(int orderId)
     {
-        var data = _context.Orders
-            .Include(x => x.OrderOrderedBooks)
-            .ThenInclude(y => y.OrderedBook)
-            .ThenInclude(z => z.Book)
-            .Where(o => o.Id == orderId);
+        try
+        {
+            var order = _dbContext.Orders
+                .Include(o => o.OrderOrderedBooks)
+                    .ThenInclude(oob => oob.OrderedBook)
+                        .ThenInclude(ob => ob.Book)
+                .SingleOrDefault(o => o.Id == orderId);
 
-        return View(data);
+            if (order == null) return NotFound();
+
+            return View(order);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error occurred while getting order details: {ex.Message}");
+            return View("Error");
+        }
     }
+
 
     [HttpGet]
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> CheckoutProceed(string id)
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        var orderedBook = await _context.OrderedBooks
+        var orderedBook = await _dbContext.OrderedBooks
             .Where(u => u.UserId == userId).Include(x => x.Book).ToListAsync();
         return View(orderedBook);
     }
@@ -78,35 +89,45 @@ public class OrderController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> CheckOut(string userId, int totalPrice)
     {
-        var orderedBooks = await _context.OrderedBooks
-            .Where(u => u.UserId == userId && u.IsOrdered == false).ToListAsync();
-        foreach (var orderedBook in orderedBooks)
+        try
         {
-            orderedBook.IsOrdered = true;
-        }
+            var orderedBooks = await _dbContext.OrderedBooks
+                .Where(ob => ob.UserId == userId && !ob.IsOrdered)
+                .ToListAsync();
 
-        var newOrder = new Order()
-        {
-            UserId = userId,
-            TotalPrice = totalPrice,
-            IsCheckedOut = true
-        };
-        var saveOrder = await _context.Orders.AddAsync(newOrder);
-        
-        await _context.SaveChangesAsync();
-        int orderId = newOrder.Id;
-        // var order = _context.Orders.Where(o => o.UserId == userId);
-        foreach (var orderedBook in orderedBooks)
-        {
-            var newOrderOrderedBook = new OrderOrderedBook()
+            foreach (var orderedBook in orderedBooks)
             {
-                OrderId = orderId,
-                OrderedBookId = orderedBook.Id
+                orderedBook.IsOrdered = true;
+            }
+
+            var newOrder = new Order
+            {
+                UserId = userId,
+                TotalPrice = totalPrice,
+                IsCheckedOut = true
             };
-            var saveOrderOrderedBook = _context.OrderOrderedBooks.Add(newOrderOrderedBook);
+
+            var savedOrder = await _dbContext.Orders.AddAsync(newOrder);
+            await _dbContext.SaveChangesAsync();
+
+            int orderId = savedOrder.Entity.Id;
+            var orderOrderedBooks = orderedBooks
+                .Select(ob => new OrderOrderedBook
+                {
+                    OrderId = orderId,
+                    OrderedBookId = ob.Id
+                });
+
+            await _dbContext.OrderOrderedBooks.AddRangeAsync(orderOrderedBooks);
+            await _dbContext.SaveChangesAsync();
+
+            TempData["SUCCESS"] = "Checked out successfully";
+            return RedirectToAction(nameof(HomeController.Index), "Home");
         }
-        await _context.SaveChangesAsync();
-        TempData["SUCCESS"] = "Checked out successfully";
-        return RedirectToAction("Index", "Home");
+        catch (Exception ex)
+        {
+            TempData["ERROR"] = "An error occurred while checking out.";
+            return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
     }
 }

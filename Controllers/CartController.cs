@@ -13,13 +13,13 @@ namespace FPTBook.Controllers;
 [AutoValidateAntiforgeryToken]
 public class CartController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ApplicationDbContext _dbContext;
     private readonly UserManager<ApplicationUser> _userManager;
     
 
     public CartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
     {
-        _context = context;
+        _dbContext = context;
         _userManager = userManager;
     }
     
@@ -27,7 +27,7 @@ public class CartController : Controller
     public async Task<IActionResult> Index()
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        var orderedBook = await _context.OrderedBooks
+        var orderedBook = await _dbContext.OrderedBooks
              .Where(u => u.UserId == userId).Include(x => x.Book).ToListAsync();
 
         return View(orderedBook);
@@ -42,7 +42,7 @@ public class CartController : Controller
         {
             return RedirectToAction("Index", "Book");
         }
-        var existingBook = await _context.OrderedBooks.FirstOrDefaultAsync(x => x.BookId == bookId && x.UserId == userId && x.IsOrdered == false);
+        var existingBook = await _dbContext.OrderedBooks.FirstOrDefaultAsync(x => x.BookId == bookId && x.UserId == userId && x.IsOrdered == false);
         if (existingBook == null)
         {
             OrderedBook orderedBook = new OrderedBook()
@@ -52,12 +52,12 @@ public class CartController : Controller
                 Quantity = 1,
                 IsOrdered = false
             };
-            var saveBook = await _context.OrderedBooks.AddAsync(orderedBook);
-            await _context.SaveChangesAsync();
+            var saveBook = await _dbContext.OrderedBooks.AddAsync(orderedBook);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index", "Book");
         }
         existingBook.Quantity += 1;
-        await _context.SaveChangesAsync();
+        await _dbContext.SaveChangesAsync();
         return RedirectToAction("Index", "Book");
     }
 
@@ -66,43 +66,35 @@ public class CartController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var orderedBook = await _context.OrderedBooks.FindAsync(id);
-        var deleteBook = _context.OrderedBooks.Remove(orderedBook);
-        await _context.SaveChangesAsync();
+        var orderedBook = await _dbContext.OrderedBooks.FindAsync(id);
+        var deleteBook = _dbContext.OrderedBooks.Remove(orderedBook);
+        await _dbContext.SaveChangesAsync();
         return RedirectToAction("Index");
     }
-    
+
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> IncreaseQuantity(int id)
-	{
-		var cartBookInDb = await _context.OrderedBooks.SingleOrDefaultAsync(t => t.Id==id);
-		if (cartBookInDb == null)
-		{
-			return NotFound();
-		}
+    {
+        var cartBookInDb = await _dbContext.OrderedBooks.FindAsync(id);
+        if (cartBookInDb == null) return NotFound();
 
-		cartBookInDb.Quantity ++;
-		await _context.SaveChangesAsync();
-		return RedirectToAction("Index");
-	}
+        cartBookInDb.Quantity++;
+        await _dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index));
+    }
 
     [AutoValidateAntiforgeryToken]
-	public async Task<IActionResult> DecreaseQuantity(int id)
-	{
-		var cartBookInDb = await _context.OrderedBooks.SingleOrDefaultAsync(t => t.Id == id);
-		if (cartBookInDb == null)
-		{
-			return NotFound();
-		}
-		if (cartBookInDb.Quantity > 1)
-		{
-			cartBookInDb.Quantity--;
-		}else 
-		{
-			_context.OrderedBooks.Remove(cartBookInDb);
-		}
-		
-		await _context.SaveChangesAsync();
-		return RedirectToAction("Index");
-	}
+    public async Task<IActionResult> DecreaseQuantity(int id)
+    {
+        var cartBookInDb = await _dbContext.OrderedBooks.FindAsync(id);
+        if (cartBookInDb == null) return NotFound();
+
+        if (--cartBookInDb.Quantity < 1)
+            _dbContext.OrderedBooks.Remove(cartBookInDb);
+
+        await _dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index));
+    }
 }

@@ -16,6 +16,5 @@ public class OrderedBook
     public int Quantity { get; set; }
     [DisplayName("Is Ordered: ")]
     public bool IsOrdered { get; set; }
-    /*public virtual ICollection<Order> Orders { get; set; }*/
     public ICollection<OrderOrderedBook> OrderOrderedBooks { get; set; }
 }

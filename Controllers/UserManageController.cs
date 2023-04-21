@@ -13,13 +13,13 @@ namespace FPTBook.Controllers;
 [AutoValidateAntiforgeryToken]
 public class UserManageController : Controller
 {
-    private readonly ApplicationDbContext _db;
+    private readonly ApplicationDbContext _dbContext;
     private readonly UserManager<ApplicationUser> _userManager;
     PasswordHasher<ApplicationUser> passwordHasher = new PasswordHasher<ApplicationUser>();
     
     public UserManageController(ApplicationDbContext db, UserManager<ApplicationUser> userManager)
     {
-        _db = db;
+        _dbContext = db;
         _userManager = userManager;
     }
     
@@ -27,7 +27,7 @@ public class UserManageController : Controller
     [AutoValidateAntiforgeryToken]
     public IActionResult Index()
     {
-	    var users = from e in _db.ApplicationUsers select e;
+	    var users = from e in _dbContext.ApplicationUsers select e;
 	    UsersDetail usersDetail = new UsersDetail()
 	    {
 		    Users = users.ToList()
@@ -38,9 +38,9 @@ public class UserManageController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> CustomerListProfile()
     {
-	    var user = await (from u in _db.ApplicationUsers
-		    join userRole in _db.UserRoles on u.Id equals userRole.UserId
-		    join role in _db.Roles on userRole.RoleId equals role.Id
+	    var user = await (from u in _dbContext.ApplicationUsers
+		    join userRole in _dbContext.UserRoles on u.Id equals userRole.UserId
+		    join role in _dbContext.Roles on userRole.RoleId equals role.Id
 		    where role.Name == "CUSTOMER"
 		    select u).ToListAsync();
 	    return View(user);
@@ -49,9 +49,9 @@ public class UserManageController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> ViewOwner()
     {
-	    var user = await (from u in _db.ApplicationUsers
-		    join userRole in _db.UserRoles on u.Id equals userRole.UserId
-		    join role in _db.Roles on userRole.RoleId equals role.Id
+	    var user = await (from u in _dbContext.ApplicationUsers
+		    join userRole in _dbContext.UserRoles on u.Id equals userRole.UserId
+		    join role in _dbContext.Roles on userRole.RoleId equals role.Id
 		    where role.Name == "OWNER"
 		    select u).ToListAsync();
 	    return View(user);
@@ -61,7 +61,7 @@ public class UserManageController : Controller
     [AutoValidateAntiforgeryToken]
     public IActionResult Index(string searchString)
     {
-	    var users = from e in _db.ApplicationUsers select e;
+	    var users = from e in _dbContext.ApplicationUsers select e;
 	    if (!string.IsNullOrEmpty(searchString))
 	    {
             users = users.Where(s => s.Email.Contains(searchString) || s.UserName.Contains(searchString));
@@ -80,7 +80,7 @@ public class UserManageController : Controller
 	[AutoValidateAntiforgeryToken]
 	public async Task<IActionResult> ChangeOwnerPassword(string id)
 	{
-		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
+		var userInDb = await _dbContext.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
 
 		if (_userManager.IsInRoleAsync(userInDb, Role.Owner) != null)
 		{
@@ -97,7 +97,7 @@ public class UserManageController : Controller
 	[AutoValidateAntiforgeryToken]
 	public async Task<IActionResult> ChangeOwnerPassword(UpdatePassword user)
 	{
-		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == user.Id);
+		var userInDb = await _dbContext.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == user.Id);
 		
 		userInDb.PasswordHash = _userManager.PasswordHasher.HashPassword(userInDb,user.Password);
         var result = await _userManager.UpdateAsync(userInDb);
@@ -108,7 +108,7 @@ public class UserManageController : Controller
 	[AutoValidateAntiforgeryToken]
 	public async Task<IActionResult> ChangeCustomerPassword(string id)
 	{
-		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
+		var userInDb = await _dbContext.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
 
 		if (_userManager.IsInRoleAsync(userInDb, Role.Customer) != null)
 		{
@@ -125,7 +125,7 @@ public class UserManageController : Controller
 	[AutoValidateAntiforgeryToken]
 	public async Task<IActionResult> ChangeCustomerPassword(UpdatePassword user)
 	{
-		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == user.Id);
+		var userInDb = await _dbContext.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == user.Id);
 		
 		userInDb.PasswordHash = _userManager.PasswordHasher.HashPassword(userInDb,user.Password);
 		var result = await _userManager.UpdateAsync(userInDb);

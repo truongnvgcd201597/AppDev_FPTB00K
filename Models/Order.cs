@@ -27,6 +27,4 @@ public class Order
     {
         CreatedAt = DateTime.Now;
     }
-
-    
 }

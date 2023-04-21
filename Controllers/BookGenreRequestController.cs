@@ -11,29 +11,29 @@ namespace FPTBook.Controllers;
 [AutoValidateAntiforgeryToken]
 public class CategoryRequestController : Controller
 {
-    private ApplicationDbContext _db;
+    private ApplicationDbContext _dbContext;
 
     public CategoryRequestController(ApplicationDbContext db)
     {
-        _db = db;
+        _dbContext = db;
     }
 
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Index()
     {
-        var categories = await _db.CategoryRequests.ToListAsync();
+        var categories = await _dbContext.CategoryRequests.ToListAsync();
         return View(categories);
     }
     
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Reject(int id)
     {
-        var categories = await _db.CategoryRequests.FindAsync(id);
+        var categories = await _dbContext.CategoryRequests.FindAsync(id);
 
         if (categories != null)
         {
-            _db.CategoryRequests.Remove(categories);
-            await _db.SaveChangesAsync();
+            _dbContext.CategoryRequests.Remove(categories);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
@@ -60,8 +60,8 @@ public class CategoryRequestController : Controller
                 CreatedAt = DateTime.Now,
                 Is_Approved = false
             };
-            var savedCategory = await _db.CategoryRequests.AddAsync(newCategory);
-            await _db.SaveChangesAsync();
+            var savedCategory = await _dbContext.CategoryRequests.AddAsync(newCategory);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
         return RedirectToAction("Create");
@@ -72,10 +72,9 @@ public class CategoryRequestController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Confirm(int id)
     {
-        var categories = await _db.CategoryRequests.FindAsync(id);
-        var category = await _db.Categories.FirstOrDefaultAsync(c => categories != null && c.Name == categories.Name);
-        /*var cate = _db.Categories.OrderByDescending(c => c.Id).FirstOrDefault(c => c.Name == categories.Name);*/
-        var cate = await _db.Categories.OrderByDescending(c => c.Id).FirstOrDefaultAsync();
+        var categories = await _dbContext.CategoryRequests.FindAsync(id);
+        var category = await _dbContext.Categories.FirstOrDefaultAsync(c => categories != null && c.Name == categories.Name);
+        var cate = await _dbContext.Categories.OrderByDescending(c => c.Id).FirstOrDefaultAsync();
         int categoryId = cate!.Id;
 
         if (categories != null && category == null)
@@ -85,11 +84,11 @@ public class CategoryRequestController : Controller
                 Id = categoryId + 1,
                 Name = categories.Name
             };
-            var saveCate = await _db.Categories.AddAsync(newCate);
+            var saveCate = await _dbContext.Categories.AddAsync(newCate);
         }
 
-        var removeRequest = _db.CategoryRequests.Remove(categories);
-        await _db.SaveChangesAsync();
+        var removeRequest = _dbContext.CategoryRequests.Remove(categories);
+        await _dbContext.SaveChangesAsync();
         return RedirectToAction("Index", "CategoryRequest");
     }
 }
