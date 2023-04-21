@@ -23,8 +23,6 @@ public class UserController : Controller
         _userManager = userManager;
     }
     
-    /*[AllowAnonymous]*/
-    /*[Authorize(Roles = "Owner")]*/
     [HttpGet]
     [AutoValidateAntiforgeryToken]
     public IActionResult Index()
@@ -103,7 +101,6 @@ public class UserController : Controller
 		
 		userInDb.PasswordHash = _userManager.PasswordHasher.HashPassword(userInDb,user.Password);
         var result = await _userManager.UpdateAsync(userInDb);
-		// _db.SaveChanges();
 		return RedirectToAction("ViewOwner");
 	}
 	
@@ -132,7 +129,6 @@ public class UserController : Controller
 		
 		userInDb.PasswordHash = _userManager.PasswordHasher.HashPassword(userInDb,user.Password);
 		var result = await _userManager.UpdateAsync(userInDb);
-		// _db.SaveChanges();
 		return RedirectToAction("ViewCustomer");
 	}
 }
