@@ -598,3 +598,4 @@ D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\obj\Debug\net6.0\FPTBook.pdb
 D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\obj\Debug\net6.0\FPTBook.genruntimeconfig.cache
 D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\obj\Debug\net6.0\ref\FPTBook.dll
 D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\bin\Debug\net6.0\Stripe.net.dll

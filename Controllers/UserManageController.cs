@@ -11,13 +11,13 @@ namespace FPTBook.Controllers;
 
 [Authorize]
 [AutoValidateAntiforgeryToken]
-public class UserController : Controller
+public class UserManageController : Controller
 {
     private readonly ApplicationDbContext _db;
     private readonly UserManager<ApplicationUser> _userManager;
     PasswordHasher<ApplicationUser> passwordHasher = new PasswordHasher<ApplicationUser>();
     
-    public UserController(ApplicationDbContext db, UserManager<ApplicationUser> userManager)
+    public UserManageController(ApplicationDbContext db, UserManager<ApplicationUser> userManager)
     {
         _db = db;
         _userManager = userManager;
@@ -36,7 +36,7 @@ public class UserController : Controller
     }
 
     [AutoValidateAntiforgeryToken]
-    public async Task<IActionResult> ViewCustomer()
+    public async Task<IActionResult> CustomerListProfile()
     {
 	    var user = await (from u in _db.ApplicationUsers
 		    join userRole in _db.UserRoles on u.Id equals userRole.UserId
@@ -129,6 +129,6 @@ public class UserController : Controller
 		
 		userInDb.PasswordHash = _userManager.PasswordHasher.HashPassword(userInDb,user.Password);
 		var result = await _userManager.UpdateAsync(userInDb);
-		return RedirectToAction("ViewCustomer");
+		return RedirectToAction("CustomerListProfile");
 	}
 }

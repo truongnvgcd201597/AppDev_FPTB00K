@@ -72,6 +72,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGVnb3J5XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookGenreRequest/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0dlbnJlUmVxdWVzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookGenreRequest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0dlbnJlUmVxdWVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,14 +100,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/CategoryRequest/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlSZXF1ZXN0XENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/CategoryRequest/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlSZXF1ZXN0XEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,16 +112,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Help.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWxwLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Shop.cshtml]
@@ -156,24 +148,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ChangeCustomerPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGFuZ2VDdXN0b21lclBhc3N3b3JkLmNzaHRtbA==
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/UserManage/ChangeCustomerPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZVxDaGFuZ2VDdXN0b21lclBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ChangeOwnerPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGFuZ2VPd25lclBhc3N3b3JkLmNzaHRtbA==
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/UserManage/ChangeOwnerPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZVxDaGFuZ2VPd25lclBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/UserManage/CustomerListProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZVxDdXN0b21lckxpc3RQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ViewCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3Q3VzdG9tZXIuY3NodG1s
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/UserManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ViewOwner.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3T3duZXIuY3NodG1s
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/UserManage/ViewOwner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZVxWaWV3T3duZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/_ViewImports.cshtml]

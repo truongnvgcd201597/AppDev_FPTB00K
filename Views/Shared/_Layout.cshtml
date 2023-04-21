@@ -78,10 +78,10 @@
                     @if (User.IsInRole(Role.Admin))
                     {
                         <li class="nav-item">
-                            <a style="@(currentRoute == "/User/ViewCustomer" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="User" asp-action="ViewCustomer">Manage Customer</a>
+                            <a style="@(currentRoute == "/User/ViewCustomer" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="UserManage" asp-action="CustomerListProfile">Manage Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a style="@(currentRoute == "/User/ViewOwner" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="User" asp-action="ViewOwner">Manage Store Owner</a>
+                            <a style="@(currentRoute == "/User/ViewOwner" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="UserManage" asp-action="ViewOwner">Manage Store Owner</a>
                         </li>
                         <li class="nav-item">
                             <a style="@(currentRoute == "/CategoryRequest" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="CategoryRequest" asp-action="Index">Manage Category Request</a>
