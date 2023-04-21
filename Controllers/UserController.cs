@@ -66,10 +66,11 @@ public class UserController : Controller
 	    var users = from e in _db.ApplicationUsers select e;
 	    if (!string.IsNullOrEmpty(searchString))
 	    {
-		    users = users.Where(s => s.Email.Contains(searchString));
-	    }
+            users = users.Where(s => s.Email.Contains(searchString) || s.UserName.Contains(searchString));
 
-	    UsersDetail usersDetail = new UsersDetail()
+        }
+
+        UsersDetail usersDetail = new UsersDetail()
 	    {
 		    Users = users.ToList()
 	    };
