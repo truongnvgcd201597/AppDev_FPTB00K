@@ -26,7 +26,7 @@ public class BookController : Controller
 
         var booksListAsync = await _dbContext.Books.Include(c => c.Category).ToListAsync();
         var categoriesName = from n in _dbContext.Categories
-            select n.Name;
+                             select n.Name;
         var categoryName = await _dbContext.Categories.Select(b => b.Name).ToListAsync();
         BookCategoryViewModels bookCategory = new BookCategoryViewModels()
         {
@@ -35,20 +35,20 @@ public class BookController : Controller
         };
         return View(bookCategory);
     }
-    
+
     [HttpPost]
     [AutoValidateAntiforgeryToken]
-    public async Task<IActionResult> Index(string bookCategory,string searchString)
+    public async Task<IActionResult> Index(string bookCategory, string searchString)
     {
         if (_dbContext.Books == null)
         {
             return Content("Unable to retrieve books from the database. Please try again later.");
         }
         var categoriesName = from n in _dbContext.Categories
-            select n.Name;
+                             select n.Name;
         var categoryName = _dbContext.Books.Select(b => b);
         var books = from b in _dbContext.Books
-            select b;
+                    select b;
         if (!string.IsNullOrEmpty(searchString))
         {
             books = books.Include(c => c.Category)
@@ -88,22 +88,22 @@ public class BookController : Controller
 
         return Content("This book doesn't exist");
     }
-    
+
     [Authorize]
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Delete(string id)
     {
-            if (HttpContext.User.IsInRole(Role.Owner))
+        if (HttpContext.User.IsInRole(Role.Owner))
+        {
+            int bookId = Int32.Parse(id);
+            var books = await _dbContext.Books.FindAsync(bookId);
+            if (books != null)
             {
-                int bookId = Int32.Parse(id);
-                var books = await _dbContext.Books.FindAsync(bookId);
-                if (books != null)
-                {
-                    _dbContext.Books.Remove(books);
-                    await _dbContext.SaveChangesAsync();
-                    return RedirectToAction("Index");
-                }
+                _dbContext.Books.Remove(books);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Index");
             }
+        }
         return RedirectToAction("Index");
     }
 
@@ -138,15 +138,15 @@ public class BookController : Controller
             Title = bookCreate.Title,
             Author = bookCreate.Author,
             Image = bookCreate.Image,
-            Summary = bookCreate.Summary, 
+            Summary = bookCreate.Summary,
             Price = bookCreate.Price,
             UpdateDate = DateTime.Now
         };
         _dbContext.Books.Add(newBook);
         await _dbContext.SaveChangesAsync();
-        return RedirectToAction("Detail", "Book", new { id = newBook.Id});
+        return RedirectToAction("Detail", "Book", new { id = newBook.Id });
     }
-    
+
     [HttpGet]
     [Authorize]
     [AutoValidateAntiforgeryToken]
@@ -155,7 +155,7 @@ public class BookController : Controller
         int bookId = Int32.Parse(id);
         var books = await _dbContext.Books.FindAsync(bookId);
         var categoriesName = from n in _dbContext.Categories
-            select n.Name;
+                             select n.Name;
         BookUpdate formBookUpdate = new BookUpdate()
         {
             Id = books.Id,
@@ -188,4 +188,3 @@ public class BookController : Controller
         return RedirectToAction("Detail", new { id = bookId });
     }
 }
-

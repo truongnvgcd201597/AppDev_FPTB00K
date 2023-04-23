@@ -19,15 +19,15 @@
     <h1 class="text-center"><strong>List of Categories</strong></h1>
     <div class="col-md-12 search-table-col" style="padding-top: 0px;margin-top: 0px;">
         <button class="btn btn-primary" type="button">
-            <a class="text-white m-0 font-weight-bold" style="text-decoration: none" asp-controller="CategoryRequest"
-               asp-action="Create">ADD REQUESTS&nbsp;</a>
+            <a class="text-white m-0 font-weight-bold" style="text-decoration: none" asp-controller="BookGenreRequest"
+               asp-action="Create">Add new book categories</a>
         </button>
         <div class="table-responsive table table-hover table-bordered results">
             <table class="table table-hover table-bordered mx-auto">
                 <thead class="bill-header cs">
                     <tr>
-                        <th id="trs-hd-1" class="col-lg-1">No.</th>
-                        <th id="trs-hd-2" class="col-lg-2">NAME</th>
+                        <th id="trs-hd-1" class="col-lg-1">STT</th>
+                        <th id="trs-hd-2" class="col-lg-2">Name</th>
                         <th id="trs-hd-3" class="col-lg-2">Action</th>
                     </tr>
                 </thead>
@@ -38,9 +38,6 @@
                             <th scope="row">@item.Id</th>
                             <td>@item.Name</td>
                             <td>
-                                <a class="btn btn-primary" href="@Url.Action("Detail", new { id = item.Id })">
-                                    <i class="fa fa-eye"></i>
-                                </a>
                                 <a class="btn btn-warning" href="@Url.Action("Update", new { id = item.Id })">
                                     <i class="fa fa-pencil"></i>
                                 </a>

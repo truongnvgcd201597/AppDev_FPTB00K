@@ -9,5 +9,9 @@ public class ApplicationUser : IdentityUser
     [PersonalData]
     public string Fullname { get; set; }
     [PersonalData]
-    public string HomeAddress { get; set; }  
+    public string HomeAddress { get; set; }
+    /*[PersonalData]
+    public Role Roles { get; set; }*/
+    
+    
 }      

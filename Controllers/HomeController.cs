@@ -12,22 +12,22 @@ namespace FPTBook.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly ApplicationDbContext _appdbContext;
-    private ApplicationDbContext _dbContext;
+    private readonly ApplicationDbContext _dbContext;
+    private ApplicationDbContext _db;
 
     public HomeController(ApplicationDbContext db)
     {
-        _dbContext = db;
+        _db = db;
     }
 
    
     
     public async Task<IActionResult> Index()
     {
-        var booksListAsync = await _dbContext.Books.Include(c => c.Category).ToListAsync();
-        var categoriesName = from n in _dbContext.Categories
+        var booksListAsync = await _db.Books.Include(c => c.Category).ToListAsync();
+        var categoriesName = from n in _db.Categories
                              select n.Name;
-        var categoryName = await _dbContext.Categories.Select(b => b.Name).ToListAsync();
+        var categoryName = await _db.Categories.Select(b => b.Name).ToListAsync();
         BookCategoryViewModels bookCategory = new BookCategoryViewModels()
         {
             Books = booksListAsync,
@@ -55,5 +55,5 @@ public class HomeController : Controller
     public IActionResult Contact()
     {
         return View();
-    }
+    }   
 }
