@@ -1,0 +1,66 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<OrderedBook>
+@inject UserManager<ApplicationUser> _userManager
+@{
+    ViewBag.Title = "Checked Out";
+    Layout = "_Layout";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-8">
+            <h1 class="text-center mb-4">Check out</h1>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="h5">Book</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var totalPrice = 0;
+                            var userId = _userManager.GetUserId(User);
+                        }
+                        @foreach (var item in Model)
+                        {
+                            if (!item.IsOrdered)
+                            {
+                                var subprice = item.Book.Price * item.Quantity;
+                                totalPrice += subprice;
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@item.Book.Image" loading="lazy" class="img-fluid rounded-3" style="width: 120px;" alt="Book" />
+                                            <div class="ms-4">
+                                                <h6 class="mb-0">@Html.DisplayFor(modelItem => item.Book.Title)</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>$@Html.DisplayFor(modelItem => item.Book.Price)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+                                    <td>$@subprice</td>
+                                </tr>
+                            }
+                        }
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="fw-bold">Total Price:</td>
+                            <td class="fw-bold">$@totalPrice</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                    @Html.ActionLink("Checkout", "CheckOut", "Order", new { userId, totalPrice }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <h1>More book</h1>
+</div>
