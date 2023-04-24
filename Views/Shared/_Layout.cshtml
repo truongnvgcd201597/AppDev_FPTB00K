@@ -54,7 +54,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     @{
-                        if (User.IsInRole(Role.Customer))
+                        if (User.IsInRole("CUSTOMER"))
                         {
                             <li class="nav-item">
                                 <a style="@(currentRoute == "/Book" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Book" asp-action="Index">All Books</a>
@@ -62,7 +62,7 @@
                         }
 
                     }
-                    @if (!User.IsInRole(Role.Admin) && !User.IsInRole(Role.Owner))
+                    @if (!User.IsInRole("ADMIN") && !User.IsInRole("OWNER"))
                     {
                         <li class="nav-item">
                             <a style="@(currentRoute == "/HomePage/FAQ" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Home" asp-action="FAQ">FAQ</a>
@@ -75,7 +75,7 @@
                         </li>
                     }
 
-                    @if (User.IsInRole(Role.Admin))
+                    @if (User.IsInRole("ADMIN"))
                     {
                         <li class="nav-item">
                             <a style="@(currentRoute == "/User/ViewCustomer" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="User" asp-action="ViewCustomer">Manage Customer</a>
@@ -90,7 +90,7 @@
 
                     }
 
-                    @if (User.IsInRole(Role.Owner))
+                    @if (User.IsInRole("OWNER"))
                     {
                         <li class="nav-item">
                             <a style="@(currentRoute == "/Book" ? "color: #df9911;":"")" class="nav-link ms-0" asp-controller="Book" asp-action="Index">Manage Books</a>
