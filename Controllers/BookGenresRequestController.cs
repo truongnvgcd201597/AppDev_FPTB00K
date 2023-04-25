@@ -89,6 +89,6 @@ public class BookGenreRequestController : Controller
 
         var removeRequest = _dbContext.CategoryRequests.Remove(categories);
         await _dbContext.SaveChangesAsync();
-        return RedirectToAction("Index", "CategoryRequest");
+        return RedirectToAction("Index", "BookGenreRequest");
     }
 }
