@@ -90,6 +90,6 @@ public class BookCategoryController : Controller
         category.Name = categoryUpdate.Name;
         await _dbContext.SaveChangesAsync();
         string cateId = $"{categoryUpdate.Id}";
-        return RedirectToAction("Detail", new { id = cateId });
+        return RedirectToAction("Index", new { id = cateId });
     }
 }

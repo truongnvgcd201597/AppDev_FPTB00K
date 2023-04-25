@@ -27,7 +27,7 @@ public class OrderController : Controller
     {
         if (HttpContext.User.Identity != null && HttpContext.User.Identity.IsAuthenticated)
         {
-            if (HttpContext.User.IsInRole(Role.Owner))
+            if (HttpContext.User.IsInRole("OWNER"))
             {
                 var user = from u in _dbContext.ApplicationUsers select u;
                 var order = from o in _dbContext.Orders select o;
@@ -54,25 +54,14 @@ public class OrderController : Controller
     [AutoValidateAntiforgeryToken]
     public IActionResult Detail(int orderId)
     {
-        try
-        {
-            var order = _dbContext.Orders
-                .Include(o => o.OrderOrderedBooks)
-                    .ThenInclude(oob => oob.OrderedBook)
-                        .ThenInclude(ob => ob.Book)
-                .SingleOrDefault(o => o.Id == orderId);
+        var data = _dbContext.Orders
+            .Include(x => x.OrderOrderedBooks)
+            .ThenInclude(y => y.OrderedBook)
+            .ThenInclude(z => z.Book)
+            .Where(o => o.Id == orderId);
 
-            if (order == null) return NotFound();
-
-            return View(order);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error occurred while getting order details: {ex.Message}");
-            return View("Error");
-        }
+        return View(data);
     }
-
 
     [HttpGet]
     [AutoValidateAntiforgeryToken]

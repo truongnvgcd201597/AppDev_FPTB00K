@@ -14,7 +14,7 @@
     <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
           asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
         
-        @if(!User.IsInRole(Role.Owner) && !User.IsInRole(Role.Admin)){
+        @if(!User.IsInRole("OWNER") && !User.IsInRole("ADMIN")){
             var count = 0;
             var userId = UserManager.GetUserId(User);
             var orderBook = _Db.OrderedBooks.Where(o => o.UserId == userId).ToList();

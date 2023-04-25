@@ -32,11 +32,11 @@
                 <div class="swiper-button-next"></div>
             </div>
         </div>
-        @if (User.IsInRole(Role.Owner))
+        @if (User.IsInRole("OWNER"))
         {
-            <h1 class="text-center">WELCOME STORE OWNER</h1>
+            <h1 class="text-center">WELCOME STORE "OWNER"</h1>
         }
-        else if (User.IsInRole(Role.Admin))
+        else if (User.IsInRole("ADMIN"))
         {
             <h1 class="text-center">WELCOME ADMIN</h1>
         }
@@ -46,7 +46,7 @@
         }
     </div>
 
-    @if (User.IsInRole(Role.Owner))
+    @if (User.IsInRole("OWNER"))
     {
         <div class="container">
         </div>
@@ -56,11 +56,11 @@
             <div class="btn-group" role="group"><a class="btn btn-primary" role="button" asp-controller="Category" asp-action="Index">MANAGE CATEGORY</a></div>
         </div>
     }
-    else if (User.IsInRole(Role.Admin))
+    else if (User.IsInRole("ADMIN"))
     {
         <div class="btn-toolbar" style="display: flex; justify-content: space-around;">
             <div class="btn-group" role="group"><a class="btn btn-primary" role="button" asp-controller="User" asp-action="ViewCustomer">MANAGE Customer</a></div>
-            <div class="btn-group" role="group"><a class="btn btn-primary" role="button" asp-controller="User" asp-action="ViewOwner">MANAGE Store Owner</a></div>
+            <div class="btn-group" role="group"><a class="btn btn-primary" role="button" asp-controller="User" asp-action="ViewOwner">MANAGE Store "OWNER"</a></div>
             <div class="btn-group" role="group"><a class="btn btn-primary" role="button" asp-controller="CategoryRequest" asp-action="Index">MANAGE Category Request</a></div>
         </div>
     }

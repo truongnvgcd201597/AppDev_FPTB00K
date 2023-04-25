@@ -75,7 +75,7 @@
 </style>
 <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
     <div class="row">
-        @if (User.IsInRole(Role.Owner))
+        @if (User.IsInRole("OWNER"))
         {
             <div class="col-md-4">
                 <a class="btn btn-dark ps-1 pe-1 mt-2 mb-2 me-2 ms-2 pt-2 pb-2" role="button" style="margin-right: 4px"

@@ -24,7 +24,7 @@ public class UserController : Controller
     }
     
     /*[AllowAnonymous]*/
-    /*[Authorize(Roles = "Owner")]*/
+    /*[Authorize(Roles = ""OWNER"")]*/
     [HttpGet]
     [AutoValidateAntiforgeryToken]
     public IActionResult Index()
@@ -84,7 +84,7 @@ public class UserController : Controller
 	{
 		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
 
-		if (_userManager.IsInRoleAsync(userInDb, Role.Owner) != null)
+		if (_userManager.IsInRoleAsync(userInDb, "OWNER") != null)
 		{
 			UpdatePassword newForm = new UpdatePassword(){
 				Id = userInDb.Id,
@@ -113,7 +113,7 @@ public class UserController : Controller
 	{
 		var userInDb = await _db.ApplicationUsers.FirstOrDefaultAsync(t => t.Id == id);
 
-		if (_userManager.IsInRoleAsync(userInDb, Role.Customer) != null)
+		if (_userManager.IsInRoleAsync(userInDb, "CUSTOMER") != null)
 		{
 			UpdatePassword newForm = new UpdatePassword(){
 				Id = userInDb.Id,

@@ -13,7 +13,7 @@
 <h3>@ViewData["Title"]</h3>
 @* <partial name="_StatusMessage" for="StatusMessage" /> *@
 @{
-    if (User.IsInRole(Role.Customer))
+    if (User.IsInRole("CUSTOMER"))
     {
         <div class="row">
             <h1 class="text-center"><strong>Record Orders</strong></h1>
@@ -24,7 +24,7 @@
                         <thead class="bill-header cs">
                         <tr>
                             <th id="trs-hd-1" class="col-lg-1">OrderID</th>
-                            @if (User.IsInRole(Role.Owner))
+                            @if (User.IsInRole("OWNER"))
                             {
                                 <th id="trs-hd-2" class="col-lg-2">Customer</th>
                             }
@@ -45,7 +45,7 @@
                             {
                                 <tr>
                                     <td>@Html.DisplayFor(modelItem => item.Id)</td>
-                                    @if (User.IsInRole(Role.Owner))
+                                    @if (User.IsInRole("OWNER"))
                                     {
                                         <td>
                                             @Html.DisplayFor(modelItem => item.ApplicationUser.Fullname)

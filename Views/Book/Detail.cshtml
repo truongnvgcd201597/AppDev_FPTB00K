@@ -36,7 +36,7 @@
                             <div class="row">
                                 @{
                                     var userId = _userManager.GetUserId(User);
-                                    if (User.IsInRole(Role.Owner))
+                                    if (User.IsInRole("OWNER"))
                                     {
                                         <a asp-action="Update" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-primary preview-toggle">Update</a>
                                         <a asp-action="Delete" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-danger preview-toggle">Delete</a>

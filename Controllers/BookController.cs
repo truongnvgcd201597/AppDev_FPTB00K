@@ -93,7 +93,7 @@ public class BookController : Controller
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Delete(string id)
     {
-        if (HttpContext.User.IsInRole(Role.Owner))
+        if (HttpContext.User.IsInRole("OWNER"))
         {
             int bookId = Int32.Parse(id);
             var books = await _dbContext.Books.FindAsync(bookId);
@@ -107,9 +107,6 @@ public class BookController : Controller
         return RedirectToAction("Index");
     }
 
-    [HttpPost]
-    [Authorize]
-    [ValidateAntiForgeryToken]
     [HttpGet]
     [Authorize]
     [AutoValidateAntiforgeryToken]
@@ -124,14 +121,17 @@ public class BookController : Controller
         return View(formBookCreate);
     }
 
-
-
     [HttpPost]
     [Authorize]
     [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Create(BookCreate bookCreate)
     {
         Category categoryInDb = await _dbContext.Categories.FirstOrDefaultAsync(n => n.Name == bookCreate.Category);
+        // if (categoryInDb == null)
+        // {
+        //     return Content("Error!");
+        // }
+
         Book newBook = new Book()
         {
             CategoryId = categoryInDb.Id,

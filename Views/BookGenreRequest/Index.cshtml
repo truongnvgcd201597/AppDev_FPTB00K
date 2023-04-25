@@ -15,7 +15,7 @@
                         <th id="trs-hd-1" class="col-lg-1">STT</th>
                         <th id="trs-hd-2" class="col-lg-3">Name of category request</th>
                         <th id="trs-hd-3" class="col-lg-2">Time</th>
-                        @if (User.IsInRole(Role.Admin))
+                        @if (User.IsInRole("ADMIN"))
                         {
                             <th id="trs-hd-4" class="col-lg-2">Action</th>
                         }
@@ -42,7 +42,7 @@
                                 => item.CreatedAt)
                                 </span><br>
                             </td>
-                            @if (User.IsInRole(Role.Admin))
+                            @if (User.IsInRole("ADMIN"))
                             {
                                 <td>
                                     <a class="btn btn-success" asp-action="Confirm" asp-route-id="@item.Id" onclick="return alert('Request has been approved')">
