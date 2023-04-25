@@ -1,267 +1,267 @@
 {
   "Files": [
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FPTBook.bundle.scp.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FPTBook.bundle.scp.css",
       "PackagePath": "staticwebassets\\FPTBook.bundle.scp.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\.DS_Store",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\.DS_Store",
       "PackagePath": "staticwebassets\\assets\\css\\.DS_Store"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\animate.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\default-skin.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\default-skin.css",
       "PackagePath": "staticwebassets\\assets\\css\\default-skin.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\icomoon.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\icomoon.css",
       "PackagePath": "staticwebassets\\assets\\css\\icomoon.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery-ui.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\assets\\css\\jquery-ui.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery.fancybox.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\jquery.fancybox.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery.mCustomScrollbar.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\jquery.mCustomScrollbar.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\meanmenu.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\meanmenu.css",
       "PackagePath": "staticwebassets\\assets\\css\\meanmenu.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\nice-select.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\normalize.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\normalize.css",
       "PackagePath": "staticwebassets\\assets\\css\\normalize.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\responsive.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\responsive.css",
       "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\slick.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\slick.css",
       "PackagePath": "staticwebassets\\assets\\css\\slick.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\css\\style.css",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-1.jpg",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\avatar-1.jpg"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-2.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\avatar-2.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-3.jpg",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\avatar-3.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\avatar-3.jpg"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\banner-bg.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\banner-bg.png",
       "PackagePath": "staticwebassets\\assets\\images\\banner-bg.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\eye-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\eye-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\eye-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\fb-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\fb-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\fb-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\icon-1.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\icon-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\icon-1.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\icon-2.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\icon-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\icon-2.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-1.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-1.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-10.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-10.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-10.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-11.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-11.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-11.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-12.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-12.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-12.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-13.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-13.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-13.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-14.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-14.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-14.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-15.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-15.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-15.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-16.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-16.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-16.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-17.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-17.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-17.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-2.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-2.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-3.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-3.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-4.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-4.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-5.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-5.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-5.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-6.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-6.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-6.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-7.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-7.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-7.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-8.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-8.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-8.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-9.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\img-9.png",
       "PackagePath": "staticwebassets\\assets\\images\\img-9.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\instagram-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\instagram-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\instagram-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\linkedin-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\linkedin-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\linkedin-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\logbook.jpg",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\logbook.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\logbook.jpg"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\logo.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\notification-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\notification-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\notification-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\play-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\play-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\play-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\register.jpg",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\register.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\register.jpg"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\right-arrow.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\right-arrow.png",
       "PackagePath": "staticwebassets\\assets\\images\\right-arrow.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\search-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\search-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\search-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\star-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\star-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\star-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\twitter-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\twitter-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\twitter-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\assets\\images\\user-icon.png",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\assets\\images\\user-icon.png",
       "PackagePath": "staticwebassets\\assets\\images\\user-icon.png"
     },
     {
-      "Id": "D:\\GDGGCP\\Dotnet\\ASM\\AppDev_FPTB00K\\wwwroot\\favicon.ico",
+      "Id": "D:\\Tai Lieu Cac Mon\\1670 App Dev\\AppDev_FPTB00K\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
