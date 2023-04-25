@@ -9,173 +9,173 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FPTBook
 build_property.RootNamespace = FPTBook
-build_property.ProjectDir = D:\Tai Lieu Cac Mon\1670 App Dev\AppDev_FPTB00K\
+build_property.ProjectDir = D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Tai Lieu Cac Mon\1670 App Dev\AppDev_FPTB00K
+build_property.MSBuildProjectDirectory = D:\GDGGCP\Dotnet\ASM\AppDev_FPTB00K
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/Record.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/Record.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVjb3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/BookCategory/Create.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookCategory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/BookCategory/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/BookCategory/Update.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookCategory/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGVnb3J5XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/BookGenreRequest/Create.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookGenreRequest/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0dlbnJlUmVxdWVzdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/BookGenreRequest/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/BookGenreRequest/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0dlbnJlUmVxdWVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Book/Create.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Book/Detail.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Book/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Book/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Book/Update.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Book/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Cart/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Home/AboutUs.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Home/Contact.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Home/FAQ.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/FAQ.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Home/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Home/Shop.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Order/CheckOut.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Order/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Order/CheckoutProceed.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Order/CheckoutProceed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tvdXRQcm9jZWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Order/Detail.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Order/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Order/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Order/Success.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Order/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Shared/Error.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Shared/_LoginPartial.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/User/ChangeCustomerPassword.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ChangeCustomerPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGFuZ2VDdXN0b21lclBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/User/ChangeOwnerPassword.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ChangeOwnerPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGFuZ2VPd25lclBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/User/Index.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/User/ViewCustomer.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ViewCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3Q3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/User/ViewOwner.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/User/ViewOwner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3T3duZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/_ViewImports.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/_ViewStart.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tai Lieu Cac Mon/1670 App Dev/AppDev_FPTB00K/Views/Shared/_Layout.cshtml]
+[D:/GDGGCP/Dotnet/ASM/AppDev_FPTB00K/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bm79rppy57

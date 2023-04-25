@@ -3,11 +3,16 @@
 @inject UserManager<ApplicationUser> _userManager;
 
 @{
-    ViewBag.Title = "Book Details";
+    ViewBag.Title = "FPTBook - Book Details";
     Layout = "_Layout";
 }
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
 <div class="container-fluid">
-    <div class="p-3 main-section bg-white">
+    <div class="p-3 main-section bg-white text-center">
         <div class="row m-0">
             <div class="col-lg-4 left-side-product-box pb-3">
                 <img class="ref-image active"
@@ -19,15 +24,15 @@
                 <div class="right-side-pro-detail border p-3 m-0">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 class="m-0 p-0" style="color: green;">@Model.Book.Title</h2>
+                            <h2 class="m-0 p-0 text-success" style="font-size: 36px;">@Model.Book.Title</h2>
                         </div>
                         <div class="col-lg-12">
-                            <h4 class="m-0 p-0 price-pro" style="color: green;">$@Model.Book.Price</h4>
+                            <h4 class="m-0 p-0 price-pro text-success" style="font-size: 24px;">$@Model.Book.Price</h4>
                         </div>
                         <div class="col-lg-12 pt-2">
                             <hr />
                             <h5>Product Detail</h5>
-                            <span>
+                            <span class="text-dark">
                                 @Model.Book.Summary
                             </span>
                             <hr class="m-0 pt-2 mt-2">
@@ -50,14 +55,7 @@
                         </div>
 
                     </div>
-            </div>
-        </div>
-        <div class="row mt-3 p-0 text-center pro-box-section">
-            <div class="col-lg-12 text-center pt-3">
-                <a href="/Book" style="text-decoration:none">
-                <h4>More Product</h4>
-                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>  
